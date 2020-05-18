@@ -1,21 +1,14 @@
 import React, { Component } from "react";
-import Header from "../../components/header/Header.js";
+import Layout from "../layout/Layout.js";
 import "./Home.css";
 
 class Home extends Component {
   render() {
     return (
-      <div className="home">
-
-        <div className="home__content">
-
-          <div className="home__header">
-            <Header />
-          </div>
-
+      <Layout>
+        <div className="home">
         </div>
-
-      </div>
+      </Layout>
     );
   }
 }

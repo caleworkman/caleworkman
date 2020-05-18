@@ -1,0 +1,12 @@
+.demo {
+  border: solid 1px var(--warmyellow);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+  padding: 1rem;
+}
+
+.demo__icon {
+  grid-row: 1 / span 2;
+  grid-column: 1 / 1;
+}

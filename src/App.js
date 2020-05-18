@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./views/home/Home.js";
+import Portfolio from "./views/portfolio/Portfolio.js";
 
 import './App.css';
 
@@ -11,6 +12,10 @@ const routes = [
     path: "/",
     component: Home
   },
+  {
+    path: "/portfolio",
+    component: Portfolio
+  }
 ];
 
 class App extends Component {
@@ -48,11 +53,13 @@ class App extends Component {
     );
 
     return (
+      <div className="app">
       <BrowserRouter>
         <Switch>
           {routeComponents}
         </Switch>
       </BrowserRouter>
+    </div>
     );
   }
 }
