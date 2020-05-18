@@ -13,9 +13,25 @@ const routes = [
     component: Home
   },
   {
+    path: "/about",
+    component: Home
+  },
+  {
+    path: "/experience",
+    component: Home
+  },
+  {
     path: "/portfolio",
     component: Portfolio
-  }
+  },
+  {
+    path: "/contact",
+    component: Home
+  },
+  {
+    path: "/resume",
+    component: Home
+  },
 ];
 
 class App extends Component {
