@@ -12,8 +12,10 @@ class Layout extends Component {
             <Header />
           </div>
 
-          {this.props.children}
-          
+          <div className="layout__body">
+            {this.props.children}
+          </div>
+
         </div>
       </div>
     );

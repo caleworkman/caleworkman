@@ -4,12 +4,13 @@ import {ReactComponent as MenuIcon} from "../../assets/menu.svg";
 import "./Header.css";
 
 class Header extends Component {
+
   render() {
     return (
       <div className="header">
-        <div className="header__title">
+        <h1 className="header__title">
           Cale Workman
-        </div>
+        </h1>
         <div className="header__nav header__nav--bar">
           <Nav />
         </div>

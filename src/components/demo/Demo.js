@@ -4,14 +4,19 @@ import "./Demo.css";
 
 class Demo extends Component {
   render() {
+
+    // TODO: Check if url includes https:///www. and if not, append it
+    const imageUrl = "https://www." + this.props.url + "/favicon.ico";
+
     return (
       <Link to={"//"+this.props.url} target="_blank">
         <div className="demo">
           <div className="demo__icon">
+            <img src={imageUrl} alt={null} />
           </div>
-          <div className="demo__title">
+          <h2 className="demo__title">
             {this.props.title}
-          </div>
+          </h2>
           <div className="demo__description">
             {this.props.description}
           </div>
@@ -22,3 +27,7 @@ class Demo extends Component {
 }
 
 export default Demo;
+
+Demo.defaultProps = {
+  imageUrl: "",
+}

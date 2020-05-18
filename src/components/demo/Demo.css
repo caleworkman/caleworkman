@@ -1,12 +1,30 @@
 .demo {
-  border: solid 1px var(--warmyellow);
+  align-items: center;
+  border: solid 2px var(--navyblue);
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 50px 1fr;
+  grid-gap: 0.5rem;
   padding: 1rem;
+}
+
+.demo:hover {
+  background-color: var(--navyblue);
+  border-color: var(--rustyred);
 }
 
 .demo__icon {
   grid-row: 1 / span 2;
   grid-column: 1 / 1;
+  justify-self: center;
+}
+
+.demo__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.demo__description {
+  text-align: justify;
 }

@@ -1,23 +1,29 @@
 .layout {
-  background-color: var(--gunmetal);
-  color: var(--warmyellow);
-  height: 100vh;
-  font-family: "Montserrat";
+  display: flex;
+  justify-content: space-around;
 }
 
 .layout__content {
-  align-items: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex: 1;
+  justify-content: center;
 }
 
 .layout__header {
   border-bottom: solid 1px var(--navyblue);
+  flex: 1;
+}
+
+.layout__body {
+  align-self: center;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
 
+  .layout__body {
+    max-width: var(--maxwidth);
+  }
 }
