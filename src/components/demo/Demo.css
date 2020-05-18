@@ -1,16 +1,21 @@
 .demo {
-  align-items: center;
+  display: flex;
   border: solid 2px var(--navyblue);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 50px 1fr;
-  grid-gap: 0.5rem;
-  padding: 1rem;
 }
 
 .demo:hover {
   background-color: var(--navyblue);
   border-color: var(--rustyred);
+}
+
+.demo__grid {
+  flex: 1;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 50px 1fr;
+  grid-gap: 0.5rem;
+  padding: 1rem;
 }
 
 .demo__icon {
