@@ -22,7 +22,7 @@ class Degree extends Component {
 
   render() {
 
-    const moreComponents = (this.state.expanded
+    const courseComponents = (this.state.expanded
       ? Object.keys(this.props.courses).map(key => {
           const course = this.props.courses[key];
           return (
@@ -32,7 +32,29 @@ class Degree extends Component {
           )
         })
       : null
-    )
+    );
+
+    const teachingComponents = (this.state.expanded
+      ? this.props.teaching.map(taught => {
+          return (
+            <div className="degree__course" key={taught}>
+              {taught}
+            </div>
+          )
+      })
+      : null
+    );
+
+    const honorsComponents = (this.state.expanded
+      ? this.props.honors.map(honor => {
+          return (
+            <div className="degree__course" key={honor}>
+              {honor}
+            </div>
+          )
+      })
+      : null
+    );
 
     return (
       <div className="degree" onClick={this.expand}>
@@ -47,13 +69,37 @@ class Degree extends Component {
             {this.props.university}
           </div>
 
-          {(this.state.expanded && moreComponents.length > 0 )
+          {(this.state.expanded && courseComponents.length > 0 )
             ? <React.Fragment>
                 <div className="degree__courses">
                   <div className="degree__courses-title">
                     Coursework
                   </div>
-                  {moreComponents}
+                  {courseComponents}
+                </div>
+              </React.Fragment>
+            : null
+          }
+
+          {(this.state.expanded && teachingComponents.length > 0 )
+            ? <React.Fragment>
+                <div className="degree__courses">
+                  <div className="degree__courses-title">
+                    Teaching
+                  </div>
+                  {teachingComponents}
+                </div>
+              </React.Fragment>
+            : null
+          }
+
+          {(this.state.expanded && honorsComponents.length > 0 )
+            ? <React.Fragment>
+                <div className="degree__courses">
+                  <div className="degree__courses-title">
+                    Honors
+                  </div>
+                  {honorsComponents}
                 </div>
               </React.Fragment>
             : null

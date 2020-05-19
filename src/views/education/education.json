@@ -6,6 +6,8 @@
     "level": "graduate",
     "university": "University of South Carolina",
     "universityShort": "USC",
+    "teaching": [],
+    "honors": [],
     "courses": {
       "Theory of Computation": {
         "year": "2020",
@@ -48,7 +50,15 @@
     "gpa": "3.650",
     "level": "graduate",
     "university": "University of South Carolina",
-    "universityShort": "USC"
+    "universityShort": "USC",
+    "teaching": [
+      "Electromagnetics",
+      "Senior Design"
+    ],
+    "honors": [
+      "Outstanding Teaching Assistant",
+      "NSF GRFP Honorable Mention"
+    ]
   },
   "Bachelors": {
     "field": "Electrical Engineering",
@@ -56,6 +66,11 @@
     "graduated": "2012",
     "gpa": "Magna cum Laude",
     "university": "University of South Carolina",
-    "universityShort": "USC"
+    "universityShort": "USC",
+    "teaching": [],
+    "honors": [
+      "Dean's List",
+      "Oustanding Graduating Senior"
+    ]
   }
 }

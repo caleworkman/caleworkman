@@ -35,7 +35,6 @@
 }
 
 .degree__courses {
-  grid-row: 3 / 3;
   grid-column: 1 / span 2;
   color: white;
   display: grid;
