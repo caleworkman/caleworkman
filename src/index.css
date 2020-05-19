@@ -59,6 +59,7 @@ body {
 
   background-color: var(--gunmetal);
   color: var(--warmyellow);
+	fill: var(--warmyellow);
   height: 100vh;
   font-family: "Montserrat";
 }

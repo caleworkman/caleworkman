@@ -6,11 +6,16 @@
 }
 
 .nav__option {
+  align-items: center;
   cursor: pointer;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: auto auto;
 }
 
 .nav__option--selected {
   color: white;
+  fill: white;
   text-decoration: underline;
 }
 
