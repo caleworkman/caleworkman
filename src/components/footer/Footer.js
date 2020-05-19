@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Modal from "../../components/modal/Modal.js";
 import {Link} from "react-router-dom"
 import {isMobile} from "react-device-detect";
 import "./Footer.css";
@@ -10,22 +11,41 @@ import github from "../../assets/github.png";
 class Footer extends Component {
   constructor(props) {
     super(props);
-    this.handleClickEmail = this.handleClickEmail.bind(this);
 
-    this.emailRef = React.createRef();
+    this.state = {
+      showModal: false
+    }
+
+    this.handleClickEmail = this.handleClickEmail.bind(this);
+    this.toggleModal = this.toggleModal.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener("copy", e => {
+      e.clipboardData.setData("text/plain", "caleworkman@gmail.com");
+      e.preventDefault();
+    });
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("copy", function(e){});
   }
 
   handleClickEmail() {
     // On mobile, open mail app. On desktop, copy to clipbard.
-    const email = "caleworkman@gmail.com";
-
     if (isMobile) {
       console.log("mobile");
     } else {
       // copy to clipboard
-      console.log(this.emailRef);
       document.execCommand("copy");
+      this.toggleModal();
     }
+  }
+
+  toggleModal() {
+    this.setState(prevState => {
+      return {showModal: !prevState.showModal}
+    });
   }
 
   render() {
@@ -53,10 +73,15 @@ class Footer extends Component {
             className="footer__social-svg"
             onClick={this.handleClickEmail}
           />
-          <div className="footer__email" ref={this.emailRef}>
-            caleworkman@gmail.com
-          </div>
         </div>
+        {this.state.showModal
+          ? <Modal onClick={this.toggleModal}>
+              <div>
+                Email copied successfully.
+              </div>
+            </Modal>
+          : null
+        }
       </div>
     );
   }
