@@ -6,3 +6,7 @@
 
   --maxwidth: 1100px;
 }
+
+.app {
+  height: 100vh;
+}

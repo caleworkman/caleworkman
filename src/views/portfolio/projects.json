@@ -20,7 +20,7 @@
   "WOW Raid Bingo": {
     "name": "Wow Raid Bingo",
     "description": "A game to be played inside the retail version of World of Warcraft. Written in Lua using AceComm for player communication.",
-    "imageUrl": "",
+    "imageUrl": "../../assets/github.png",
     "url": "www.github.com/caleworkman/RaidBingo"
   }
 }

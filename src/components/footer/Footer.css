@@ -1,0 +1,34 @@
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+  padding-right: 1rem;
+}
+
+.footer__socials {
+  cursor: pointer;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer__social-icon {
+  height: 32px;
+}
+
+.footer__social-svg {
+  fill: white;
+  height: 35px;
+  width: 35px;
+}
+
+.footer__email {
+  display: none;
+}

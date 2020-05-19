@@ -1,6 +1,7 @@
 .layout {
   display: flex;
   justify-content: space-around;
+  height: 100%;
 }
 
 .layout__content {
@@ -12,11 +13,18 @@
 
 .layout__header {
   border-bottom: solid 1px var(--navyblue);
-  flex: 1;
 }
 
 .layout__body {
   align-self: center;
+  flex: 1;
+  overflow: auto;
+}
+
+.layout__footer {
+  align-self: center;
+  max-width: var(--maxwidth);
+  width: 100%;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
