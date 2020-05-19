@@ -34,7 +34,7 @@
 .degree__gpa {
 }
 
-.degree__courses {
+.degree__more {
   grid-column: 1 / span 2;
   color: white;
   display: grid;
@@ -42,7 +42,7 @@
   font-size: 0.8rem;
 }
 
-.degree__courses-title {
+.degree__more-title {
   text-decoration: underline;
 }
 

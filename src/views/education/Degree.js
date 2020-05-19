@@ -71,8 +71,8 @@ class Degree extends Component {
 
           {(this.state.expanded && courseComponents.length > 0 )
             ? <React.Fragment>
-                <div className="degree__courses">
-                  <div className="degree__courses-title">
+                <div className="degree__more">
+                  <div className="degree__more-title">
                     Coursework
                   </div>
                   {courseComponents}
@@ -83,8 +83,8 @@ class Degree extends Component {
 
           {(this.state.expanded && teachingComponents.length > 0 )
             ? <React.Fragment>
-                <div className="degree__courses">
-                  <div className="degree__courses-title">
+                <div className="degree__more">
+                  <div className="degree__more-title">
                     Teaching
                   </div>
                   {teachingComponents}
@@ -95,8 +95,8 @@ class Degree extends Component {
 
           {(this.state.expanded && honorsComponents.length > 0 )
             ? <React.Fragment>
-                <div className="degree__courses">
-                  <div className="degree__courses-title">
+                <div className="degree__more">
+                  <div className="degree__more-title">
                     Honors
                   </div>
                   {honorsComponents}
