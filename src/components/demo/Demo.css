@@ -1,6 +1,7 @@
 .demo {
-  display: flex;
+  align-items: center;
   border: solid 2px var(--navyblue);
+  display: flex;
 }
 
 .demo:hover {

@@ -8,7 +8,13 @@ class Nav extends Component {
     super(props);
     this.navigate = this.navigate.bind(this);
 
-    this.navs = ['about', 'education', 'portfolio', 'contact', 'resume'];
+    this.navs = [
+      'about',
+      'education',
+      'portfolio',
+      'contact',
+      'resume'
+    ];
   }
 
   navigate(event) {

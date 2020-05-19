@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./views/home/Home.js";
+import Education from "./views/education/Education.js";
 import Portfolio from "./views/portfolio/Portfolio.js";
 
 import './App.css';
@@ -17,8 +18,8 @@ const routes = [
     component: Home
   },
   {
-    path: "/experience",
-    component: Home
+    path: "/education",
+    component: Education
   },
   {
     path: "/portfolio",

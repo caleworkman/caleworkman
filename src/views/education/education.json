@@ -1,0 +1,49 @@
+{
+  "Doctorate": {
+    "field": "Computer Science",
+    "degree": "Ph.D.",
+    "graduated": "Expected 2024",
+    "level": "graduate",
+    "university": "University of South Carolina",
+    "universityShort": "USC",
+    "courses": {
+      "Computer Architecture": {
+        "year": "2020",
+        "semester": "Spring",
+        "grade": "B+",
+        "objectives": [
+          "Finite Automata and Regular Languages",
+          "Turing Machines and Computability Theory",
+          "Computation Complexity"
+        ]
+      },
+      "Bayesian Networks and Decision Graphs": {
+        "year": "2020",
+        "semester": "Spring",
+        "grade": "B+",
+        "objectives": [
+          "Uncertainty in Artificial Intelligence",
+          "Probabilistic and Causual Modeling with Bayesian Networks",
+          "Computer-based decision analysis with Hugin"
+        ]
+      }
+    }
+  },
+  "Masters": {
+    "field": "Electrical Engineering",
+    "degree": "M.E.",
+    "graduated": "2016",
+    "gpa": "3.650",
+    "level": "graduate",
+    "university": "University of South Carolina",
+    "universityShort": "USC"
+  },
+  "Bachelors": {
+    "field": "Electrical Engineering",
+    "degree": "B.S.",
+    "graduated": "2012",
+    "gpa": "Magna cum Laude",
+    "university": "University of South Carolina",
+    "universityShort": "USC"
+  }
+}
