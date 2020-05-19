@@ -27,6 +27,10 @@
   text-align: right;
 }
 
+.degree__university {
+  grid-column: 1 / span 2;
+}
+
 .degree__gpa {
 }
 
