@@ -27,6 +27,9 @@
   text-align: right;
 }
 
+.degree__gpa {
+}
+
 .degree__courses {
   grid-row: 3 / 3;
   grid-column: 1 / span 2;

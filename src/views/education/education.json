@@ -7,7 +7,7 @@
     "university": "University of South Carolina",
     "universityShort": "USC",
     "courses": {
-      "Computer Architecture": {
+      "Theory of Computation": {
         "year": "2020",
         "semester": "Spring",
         "grade": "B+",
@@ -26,6 +26,18 @@
           "Probabilistic and Causual Modeling with Bayesian Networks",
           "Computer-based decision analysis with Hugin"
         ]
+      },
+      "Analysis of Algorithms": {
+        "year": "2020",
+        "semester": "Fall",
+        "enrolled": true,
+        "objectives": []
+      },
+      "Computer Architecture": {
+        "year": "2020",
+        "semester": "Fall",
+        "enrolled": true,
+        "objectives": []
       }
     }
   },

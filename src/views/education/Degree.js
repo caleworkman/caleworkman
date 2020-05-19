@@ -27,7 +27,7 @@ class Degree extends Component {
           const course = this.props.courses[key];
           return (
             <div className="degree__course" key={key}>
-              {key}
+              {key + (course.enrolled ? " (enrolled)" : "")}
             </div>
           )
         })
@@ -74,5 +74,6 @@ class Degree extends Component {
 export default Degree;
 
 Degree.defaultProps = {
-  courses: {}
+  courses: {},
+  gpa: null
 }
