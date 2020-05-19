@@ -7,6 +7,8 @@ class Nav extends Component {
   constructor(props) {
     super(props);
     this.navigate = this.navigate.bind(this);
+
+    this.navs = ['about', 'education', 'portfolio', 'contact', 'resume'];
   }
 
   navigate(event) {
@@ -14,23 +16,22 @@ class Nav extends Component {
   }
 
   render() {
+    const location = this.props.location.pathname.replace("/","");
+
+    const navs = this.navs.map(nav => {
+      const className = (location === nav)
+        ? "nav__option nav__option--selected"
+        : "nav__option";
+      return (
+        <div className={className} id={nav} key={nav} onClick={this.navigate}>
+          {nav}
+        </div>
+      )}
+    );
+
     return (
       <div className="nav">
-        <div className="nav__option" id="about" onClick={this.navigate}>
-          About
-        </div>
-        <div className="nav__option" id="experience" onClick={this.navigate}>
-          Experience
-        </div>
-        <div className="nav__option" id="portfolio" onClick={this.navigate}>
-          Portfolio
-        </div>
-        <div className="nav__option" id="contact" onClick={this.navigate}>
-          Contact
-        </div>
-        <div className="nav__option" ic="resume" onClick={this.navigate}>
-          Resume
-        </div>
+        {navs}
       </div>
     );
   }

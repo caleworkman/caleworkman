@@ -9,6 +9,11 @@
   cursor: pointer;
 }
 
+.nav__option--selected {
+  color: white;
+  text-decoration: underline;
+}
+
 .nav__option:hover {
   color: var(--rustyred);
   text-decoration: underline;
