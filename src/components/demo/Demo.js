@@ -18,6 +18,12 @@ class Demo extends Component {
             <div className="demo__description">
               {this.props.description}
             </div>
+
+            <div className="demo__tech">
+              <span className="demo__tech-list">
+                {this.props.technologies.join(", ")}
+              </span>
+            </div>
           </div>
         </Link>
       </div>

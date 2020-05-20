@@ -36,3 +36,22 @@
 .demo__description {
   text-align: justify;
 }
+
+.demo__tech {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: auto 1fr;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.demo__tech-title {
+  grid-column: 1;
+  text-decoration: underline;
+}
+
+.demo__tech-list {
+  grid-column: 2;
+  font-style: italic;
+}
