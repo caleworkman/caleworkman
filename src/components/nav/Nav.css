@@ -8,6 +8,8 @@
 
 .nav__option {
   align-items: center;
+  border-bottom: solid 1px transparent; /* Adding a transparent bottom border
+              so that on hover the item won't move up when a border appear. */
   cursor: pointer;
   display: grid;
   grid-gap: 0.5rem;
@@ -15,23 +17,15 @@
 }
 
 .nav__option--selected {
-  border-bottom: solid 1px white;
+  border-color: white;
   color: white;
   fill: white;
 }
 
 .nav__option:hover {
-  border-bottom: solid 1px var(--rustyred);
+  border-color: var(--rustyred);
   color: var(--rustyred);
   fill: var(--rustyred);
-}
-
-.nav__option:hover {
-  margin-bottom: -1px;
-}
-
-.nav__option--selected:hover {
-  margin-bottom: 0px;
 }
 
 
