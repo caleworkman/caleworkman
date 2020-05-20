@@ -19,13 +19,13 @@
   align-self: center;
   flex: 1;
   overflow: auto;
-  width: 100%;
+  width: 100vw;
 }
 
 .layout__footer {
   align-self: center;
   max-width: var(--maxwidth);
-  width: 100%;
+  width: 100vw;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
