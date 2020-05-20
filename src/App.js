@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./views/home/Home.js";
 import Education from "./views/education/Education.js";
 import Portfolio from "./views/portfolio/Portfolio.js";
+import Resume from "./views/resume/Resume.js";
 
 import './App.css';
 
@@ -29,7 +30,7 @@ const routes = [
   },
   {
     path: "/resume",
-    component: Home
+    component: Resume
   },
 ];
 
