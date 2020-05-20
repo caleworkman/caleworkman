@@ -35,6 +35,7 @@ class Footer extends Component {
     // On mobile, open mail app. On desktop, copy to clipbard.
     if (isMobile) {
       console.log("mobile");
+      // TODO: open mail app
     } else {
       // copy to clipboard
       document.execCommand("copy");

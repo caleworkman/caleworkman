@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {ToggleExpand} from "../../components/toggleexpand/ToggleExpand.js";
 import "./Degree.css";
 
 import {ReactComponent as ExpandLess} from "../../assets/expand-less.svg";
@@ -107,10 +108,7 @@ class Degree extends Component {
 
         </div>
         <div className="degree__expand-icon">
-          {this.state.expanded
-            ? <ExpandLess />
-            : <ExpandMore />
-          }
+          {ToggleExpand({expanded: this.state.expanded})}
         </div>
       </div>
     );
