@@ -22,5 +22,11 @@
     "description": "A game to be played inside the retail version of World of Warcraft. Written in Lua using AceComm for player communication.",
     "imageUrl": "../../assets/github.png",
     "url": "www.github.com/caleworkman/RaidBingo"
+  },
+  "This Page": {
+    "name": "CaleWorkman.com",
+    "description": "Personal website. You're Looking at it.",
+    "imageUrl": "",
+    "url": "www.caleworkman.com"
   }
 }
