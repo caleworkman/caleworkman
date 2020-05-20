@@ -1,3 +1,22 @@
 .resume {
+  justify-content: space-around;
+  display: flex;
   padding: 1rem;
+  position: relative;
+}
+
+.resume__info {
+  background: var(--rustyred);
+  border-radius: 1rem;
+  color: white;
+  display: none;
+  padding: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.resume:hover .resume__info {
+  display: inline-block;
 }

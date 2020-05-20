@@ -76,8 +76,10 @@ class Footer extends Component {
         </div>
         {this.state.showModal
           ? <Modal onClick={this.toggleModal}>
-              <div>
-                Email copied successfully.
+              <div className="footer__modal-container">
+                <div className="footer__modal-content">
+                  Email copied successfully.
+                </div>
               </div>
             </Modal>
           : null
