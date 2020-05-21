@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Layout from "../layout/Layout.js";
 import { Document, Page, pdfjs } from "react-pdf";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import { Redirect } from "react-router";
 
 import "./Resume.css";
@@ -24,7 +24,7 @@ class Resume extends Component {
 
   render() {
 
-    if (isMobile) {
+    if (isMobileOnly) {
       return (
         <Redirect to="./Workman_Resume_2020.pdf" />
       );
