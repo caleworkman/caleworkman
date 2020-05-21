@@ -1,17 +1,20 @@
 {
   "Barley": {
     "name": "Barley",
-    "description": "An iOS mobile app for restaurant inventory management and order submission. Written in Swift and using CloudKit API. A python backend keeps each state-wide catalog up to date.",
+    "description": "An iOS mobile app for restaurant inventory management and liquor order submission. Orders are submitted through third-party email or fax API's. A python backend keeps each state-wide catalog up to date. Currently developing a PWA in React.",
     "imageUrl": "https://uploads-ssl.webflow.com/592d99c115e9c76ea2f8be58/592d9a5f2940516ee255130e_MainLogo_Launch.svg",
     "url": "www.barleyapp.co",
     "technologies": [
       "Swift",
       "CloudKit",
       "XCode",
+      "Phaxio",
+      "Mailgun",
       "Python",
       "RESTful",
       "Zeplin"
-    ]
+    ],
+    "wip": false
   },
   "In the Money": {
     "name": "In the Money",
@@ -27,31 +30,35 @@
       "RESTful",
       "AWS",
       "Google Analytics"
-    ]
+    ],
+    "wip": false
   },
   "LifeChart": {
     "name": "LifeChart",
-    "description": "A tool to generate an aesthetic personal timeline. Written in React with Firebase backend.",
+    "description": "A tool to generate an aesthetic personal timeline. Written in React with Google Firestore backend.",
     "imageUrl": "",
-    "url": "www.lifechart.app",
+    "url": "www.lifechart-dev.firebaseapp.com/",
     "technologies": [
       "ReactJS",
       "Jest",
       "HTML5",
       "CSS3",
       "JavaScript",
+      "Firestore",
       "RESTful"
-    ]
+    ],
+    "wip": true
   },
-  "WOW Raid Bingo": {
-    "name": "Wow Raid Bingo",
-    "description": "A game to be played inside the retail version of World of Warcraft. Written in Lua using AceComm for player communication.",
-    "imageUrl": "../../assets/github.png",
+  "Warcraft Bingo": {
+    "name": "Warcraft Bingo",
+    "description": "A multiplayer bingo game to be played inside the retail version of World of Warcraft. Written in Lua using AceComm for player communication and up to date for retail version 8.3.",
+    "imageUrl": "https://gamepedia.cursecdn.com/wowpedia/9/97/Charactercreate-class_demonhunter.png",
     "url": "www.github.com/caleworkman/RaidBingo",
     "technologies": [
       "Lua",
       "JSON"
-    ]
+    ],
+    "wip": false
   },
   "This Page": {
     "name": "CaleWorkman.com",
@@ -66,6 +73,7 @@
       "RESTful",
       "AWS",
       "Google Analytics"
-    ]
+    ],
+    "wip": false
   }
 }

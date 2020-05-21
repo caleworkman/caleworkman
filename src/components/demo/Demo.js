@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Bubble from "../bubble/Bubble.js";
 import {Link} from "react-router-dom"
 import "./Demo.css";
 
@@ -6,11 +7,11 @@ class Demo extends Component {
 
   render() {
     return (
-      <div className="demo">
-        <Link to={"//"+this.props.url} target="_blank">
+      <Link to={"//" + this.props.url} target="_blank" className="demo__link">
+        <div className="demo">
           <div className="demo__grid">
             <div className="demo__icon">
-              <img src={this.props.imageUrl} alt={null} />
+              <img src={this.props.imageUrl} alt={""} />
             </div>
             <h2 className="demo__title">
               {this.props.name}
@@ -20,13 +21,18 @@ class Demo extends Component {
             </div>
 
             <div className="demo__tech">
-              <span className="demo__tech-list">
-                {this.props.technologies.join(", ")}
-              </span>
+              {this.props.technologies.map(tech => {
+                return <Bubble content={tech} />
+              })}
             </div>
           </div>
-        </Link>
-      </div>
+
+          {this.props.wip
+            ? <div className="demo__wip">*Under Development</div>
+            : null
+          }
+        </div>
+      </Link>
     )
   }
 }

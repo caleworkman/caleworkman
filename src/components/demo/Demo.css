@@ -1,7 +1,11 @@
-.demo {
-  align-items: center;
-  border: solid 2px var(--navyblue);
+.demo__link {
   display: flex;
+}
+
+.demo {
+  flex: 1;
+  border: solid 2px var(--navyblue);
+  position: relative;
 }
 
 .demo:hover {
@@ -15,7 +19,7 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 50px 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   padding: 1rem;
 }
 
@@ -25,6 +29,12 @@
   justify-self: center;
   width: 48px;
   height: 48px;
+}
+
+.demo__icon img {
+  border-radius: 6px;
+  height: 48px;
+  width: 48px;
 }
 
 .demo__title {
@@ -41,17 +51,16 @@
   grid-column: 1 / span 2;
   display: grid;
   grid-gap: 0.5rem;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-auto-rows: 1fr;
   color: white;
   font-size: 0.9rem;
 }
 
-.demo__tech-title {
-  grid-column: 1;
-  text-decoration: underline;
-}
-
-.demo__tech-list {
-  grid-column: 2;
-  font-style: italic;
+.demo__wip {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 0.8rem;
 }
