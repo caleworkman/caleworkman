@@ -36,3 +36,15 @@
     max-width: var(--maxwidth);
   }
 }
+
+/* Burger Menu */
+.bm-burger-button {
+  fill: var(--warmyellow);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.bm-menu {
+  padding-top: 3rem;
+}

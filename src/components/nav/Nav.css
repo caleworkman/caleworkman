@@ -1,9 +1,9 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: 1fr;
   text-transform: uppercase;
-  max-width: 1100px;
-  width: 100%;
+  padding: 1rem;
 }
 
 .nav__option {
@@ -22,15 +22,23 @@
   fill: white;
 }
 
-.nav__option:hover {
-  border-color: var(--rustyred);
-  color: var(--rustyred);
-  fill: var(--rustyred);
-}
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
 
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  .nav__option:hover {
+    border-color: var(--rustyred);
+    color: var(--rustyred);
+    fill: var(--rustyred);
+  }
 }

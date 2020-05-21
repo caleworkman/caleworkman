@@ -6,13 +6,18 @@ import {ReactComponent as DescriptionIcon} from "../../assets/description.svg";
 import {ReactComponent as DevicesIcon} from "../../assets/devices.svg";
 import {ReactComponent as SchoolIcon} from "../../assets/school.svg";
 
-
 import "./Nav.css";
 
 class Nav extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      isMenuOpen: false
+    }
+
     this.navigate = this.navigate.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
 
     this.navs = {
       'about': <AccountIcon />,
@@ -26,15 +31,21 @@ class Nav extends Component {
     this.props.history.push(event.currentTarget.id);
   }
 
+  toggleMenu(e) {
+    e.preventDefault();
+    this.setState(prevState => {
+      return { isMenuOpen: !prevState.isMenuOpen }
+    });
+  }
+
   render() {
     const location = this.props.location.pathname.replace("/","");
 
     const navs = Object.keys(this.navs).map(nav => {
+      const icon = this.navs[nav];
       const className = (location === nav)
         ? "nav__option nav__option--selected"
         : "nav__option";
-
-      const icon = this.navs[nav];
 
       return (
         <div className={className} id={nav} key={nav} onClick={this.navigate}>
