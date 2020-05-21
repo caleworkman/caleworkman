@@ -34,6 +34,7 @@
     text-transform: uppercase;
     max-width: 1100px;
     width: 100%;
+    padding: 0;
   }
 
   .nav__option:hover {
