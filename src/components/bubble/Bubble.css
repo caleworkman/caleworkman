@@ -1,0 +1,10 @@
+.bubble {
+  align-self: center;
+  background: var(--rustyred);
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  text-align: center;
+}
