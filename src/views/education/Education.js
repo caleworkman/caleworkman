@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../layout/Layout.js";
-import Degree from "./Degree.js";
+import Degree from "../../components/degree/Degree.js";
 
 import "./Education.css";
 
