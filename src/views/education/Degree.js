@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {ToggleExpand} from "../../components/toggleexpand/ToggleExpand.js";
+import {ToggleExpandIcon} from "../../components/expand/ToggleExpandIcon.js";
 import "./Degree.css";
 
 import {ReactComponent as ExpandLess} from "../../assets/expand-less.svg";
