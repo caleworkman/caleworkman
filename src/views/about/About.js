@@ -29,7 +29,7 @@ class About extends Component {
 
           <h2>2018</h2>
           <p>
-            Previously I was a C#/.NET developer for an online form builder.
+            I was a C#/.NET developer for an online form builder.
             I managed Tier-3 customer support and was responsible for debugging
             complex customer forms and root-causing significant bugs.
           </p>
