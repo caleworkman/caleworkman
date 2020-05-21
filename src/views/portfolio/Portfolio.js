@@ -9,7 +9,7 @@ class Portfolio extends Component {
   render() {
 
     const projectComponents = Object.keys(portfolio).map(key => {
-      const project = projects[key];
+      const project = portfolio[key];
       return <Demo key={project.name} {...project} />
     });
 

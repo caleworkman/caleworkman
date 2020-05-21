@@ -108,7 +108,7 @@ class Degree extends Component {
 
         </div>
         <div className="degree__expand-icon">
-          {ToggleExpand({expanded: this.state.expanded})}
+          {ToggleExpandIcon({expanded: this.state.expanded})}
         </div>
       </div>
     );

@@ -73,3 +73,7 @@ a {
   color: var(--warmyellow);
   text-decoration: none;
 }
+
+b {
+	font-weight: bold;
+}

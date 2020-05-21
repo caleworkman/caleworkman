@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./views/home/Home.js";
+import About from "./views/about/About.js";
 import Education from "./views/education/Education.js";
 import Portfolio from "./views/portfolio/Portfolio.js";
 import Resume from "./views/resume/Resume.js";
@@ -14,7 +15,7 @@ const routes = [
   },
   {
     path: "/about",
-    component: Home
+    component: About
   },
   {
     path: "/education",
