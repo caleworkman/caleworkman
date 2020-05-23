@@ -8,12 +8,20 @@ class Home extends Component {
     return (
       <Layout>
         <div className="home">
-          <h2>
-            Skills
-          </h2>
-          <div className="home__skills">
-
+          <div className="home__content">
+            <h2 className="home__hi">
+              Hi, my name is
+            </h2>
+            <h1 className="home__name">
+              Cale Workman
+            </h1>
+            <h2 className="home__about">
+              I'm a software engineer specializing in Front-End
+              development.
+            </h2>
           </div>
+
+
         </div>
       </Layout>
     );

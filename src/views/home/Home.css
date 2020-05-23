@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.home__content {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-rows: auto;
+  padding: 1rem;
+}
+
+.home__hi {
+  font-size: 0.8rem;
+}
+
+.home__name {
+  font-size: 1.5rem;
+}
+
+.home__about {
+  font-size: 1rem;
+}
