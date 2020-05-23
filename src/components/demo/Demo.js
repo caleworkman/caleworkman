@@ -22,7 +22,7 @@ class Demo extends Component {
 
             <div className="demo__tech">
               {this.props.technologies.map(tech => {
-                return <Bubble content={tech} />
+                return <Bubble content={tech} key={tech}/>
               })}
             </div>
           </div>
