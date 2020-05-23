@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Header from "../../components/header/Header.js";
 import Footer from "../../components/footer/Footer.js";
 import Nav from "../../components/nav/Nav.js";
 
-import { isMobileOnly } from 'react-device-detect';
 import { push as Menu } from "react-burger-menu";
+import { isMobileOnly } from 'react-device-detect';
 
 import {ReactComponent as MenuIcon} from "../../assets/menu.svg";
+
 
 import "./Layout.css"
 
@@ -23,7 +23,6 @@ class Layout extends Component {
 
     return (
       <div className="layout" id="outer-container">
-
         {isMobileOnly
           ? <Menu
               right
@@ -36,11 +35,15 @@ class Layout extends Component {
             </Menu>
           : null
         }
-        <div className="layout__content" id="page-wrap">
+        <div className="layout__wrapper" id="page-wrap">
 
-          <div className="layout__header">
-            <Header />
-          </div>
+          <header className="layout__header">
+            <div className="layout__logo">Cale</div>
+            {!isMobileOnly
+              ? <Nav />
+              : <div style={{visibility: "hidden", height: "24px"}} />
+              }
+          </header>
 
           <div className="layout__body">
             {this.props.children}

@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-.layout__content {
+.layout__wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -12,7 +12,13 @@
 }
 
 .layout__header {
-  border-bottom: solid 1px var(--navyblue);
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+}
+
+.layout__logo {
+  font-style: italic; /* TODO: make this look better */
 }
 
 .layout__body {
@@ -35,16 +41,4 @@
   .layout__body {
     max-width: var(--maxwidth);
   }
-}
-
-/* Burger Menu */
-.bm-burger-button {
-  fill: var(--warmyellow);
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
-.bm-menu {
-  padding-top: 3rem;
 }

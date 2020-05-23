@@ -12,12 +12,7 @@ class Nav extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      isMenuOpen: false
-    }
-
     this.navigate = this.navigate.bind(this);
-    this.toggleMenu = this.toggleMenu.bind(this);
 
     this.navs = {
       'home': <AccountIcon />,
@@ -30,13 +25,6 @@ class Nav extends Component {
 
   navigate(event) {
     this.props.history.push(event.currentTarget.id);
-  }
-
-  toggleMenu(e) {
-    e.preventDefault();
-    this.setState(prevState => {
-      return { isMenuOpen: !prevState.isMenuOpen }
-    });
   }
 
   render() {
