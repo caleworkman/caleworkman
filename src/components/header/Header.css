@@ -27,27 +27,26 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
   .header {
-    justify-items: center;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 0.5rem;
+    padding: 1rem 3rem;
   }
 
   .header__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .header__subtitle {
     display: inline-block;
     grid-row: 2;
     grid-column: 1;
+    font-size: 0.8rem;
   }
 
   .header__nav {
-    grid-row: 3 / 3;
-    grid-column: 1;
-    display: flex;
-    justify-self: center;
-    max-width: var(--maxwidth);
-    width: 100%;
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    display: inline-block;
   }
 }

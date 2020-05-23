@@ -11,7 +11,7 @@ class Header extends Component {
           Cale Workman
         </h1>
         <h2 className="header__subtitle">
-          Experienced Software Developer, Computer Science Ph.D. Student
+          Software Developer, CS Ph.D. Student
         </h2>
         <div className="header__nav">
           <Nav />

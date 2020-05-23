@@ -20,6 +20,7 @@ class Nav extends Component {
     this.toggleMenu = this.toggleMenu.bind(this);
 
     this.navs = {
+      'home': <AccountIcon />,
       'about': <AccountIcon />,
       'education': <SchoolIcon />,
       'portfolio': <DevicesIcon />,
@@ -39,7 +40,7 @@ class Nav extends Component {
   }
 
   render() {
-    const location = this.props.location.pathname.replace("/","");
+    const location = this.props.location.pathname.replace("/","") || "home";
 
     const navs = Object.keys(this.navs).map(nav => {
       const icon = this.navs[nav];

@@ -9,7 +9,7 @@
 .nav__option {
   align-items: center;
   border-bottom: solid 1px transparent; /* Adding a transparent bottom border
-              so that on hover the item won't move up when a border appear. */
+              so that on hover the item won't move up when a border appears. */
   cursor: pointer;
   display: grid;
   grid-gap: 0.5rem;
@@ -32,7 +32,7 @@
     flex-direction: row;
     justify-content: space-between;
     text-transform: uppercase;
-    max-width: 1100px;
+    max-width: var(--maxwidth);
     width: 100%;
     padding: 0;
   }

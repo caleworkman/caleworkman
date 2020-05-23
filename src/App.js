@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Home from "./views/home/Home.js";
 import About from "./views/about/About.js";
 import Education from "./views/education/Education.js";
@@ -51,6 +51,7 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             {routeComponents}
+            <Redirect to="/" />
           </Switch>
         </BrowserRouter>
       </div>
