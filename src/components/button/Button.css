@@ -1,0 +1,8 @@
+.button {
+  background-color: var(--navyblue);
+  border: solid 1px white;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
