@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import {ToggleExpandIcon} from "../../components/expand/ToggleExpandIcon.js";
 import "./Degree.css";
 
-import {ReactComponent as ExpandLess} from "../../assets/expand-less.svg";
-import {ReactComponent as ExpandMore} from "../../assets/expand-more.svg";
-
 class Degree extends Component {
   constructor(props) {
     super(props);

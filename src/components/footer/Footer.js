@@ -53,7 +53,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer__copyright">
-          Copyright Cale Workman 2020
+          © 2020 Cale Workman
         </div>
         <div className="footer__socials">
           <Link to="//github.com/caleworkman" target="_blank">
