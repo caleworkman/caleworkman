@@ -15,7 +15,7 @@ class Resume extends Component {
       numPages: null,
       pageNumber: 1,
     }
-    this.pdfFile = "./Workman_Resume_2020.pdf";
+    this.pdfFile = "./Workman_Resume.pdf";
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -25,15 +25,18 @@ class Resume extends Component {
   render() {
 
     if (isMobileOnly) {
+      console.log("redirect");
       return (
-        <Redirect to="./Workman_Resume_2020.pdf" />
+        <div className="resume">
+          <a href="/Workman_Resume.pdf" download>Downlaod</a>
+        </div>
       );
     }
 
     return (
       <Layout>
         <div className="resume">
-          <a href="./Workman_Resume_2020.pdf" target="_blank">
+          <a href="./Workman_Resume.pdf" target="_blank">
             <Document
               file={this.pdfFile}
               onLoadSuccess={this.onDocumentLoadSuccess}>
