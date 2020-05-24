@@ -4,9 +4,6 @@ import Bubble from "../../components/bubble/Bubble.js";
 import Button from "../../components/button/Button.js";
 import Contact from "../../components/contact/Contact.js";
 
-import { copyText } from "../../Utilities.js";
-
-
 import { withRouter } from "react-router";
 
 import "./Home.css";
