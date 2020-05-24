@@ -27,9 +27,7 @@ class Resume extends Component {
     if (isMobileOnly) {
       console.log("redirect");
       return (
-        <div className="resume">
-          <a href="/Workman_Resume.pdf" download>Downlaod</a>
-        </div>
+        <Redirect to="./Workman_Resume.pdf" />
       );
     }
 
