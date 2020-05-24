@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Contact from "../../components/contact/Contact.js";
-import Modal from "../../components/modal/Modal.js";
 import {Link} from "react-router-dom"
 
 import {ReactComponent as EmailIcon} from "../../assets/email.svg";
