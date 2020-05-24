@@ -19,6 +19,7 @@
 .home__name {
   color: var(--turquoise);
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .home__about {

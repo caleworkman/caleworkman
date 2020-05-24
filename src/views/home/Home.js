@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Layout from "../layout/Layout.js";
 import Bubble from "../../components/bubble/Bubble.js";
 import Button from "../../components/button/Button.js";
+
+import { withRouter } from "react-router";
+
 import "./Home.css";
 
 class Home extends Component {
@@ -24,7 +27,7 @@ class Home extends Component {
               Hi, my name is
             </h2>
             <h1 className="home__name">
-              <b>Cale Workman.</b>
+              Cale Workman.
             </h1>
             <p className="home__about">
               I'm a software engineer with 5+ years
@@ -39,8 +42,14 @@ class Home extends Component {
 
 
           <div className="home__buttons">
-            <Button content="Contact Me"  />
-            <Button content="See My Work" />
+            <Button
+              content="Contact Me"
+              onClick={() => this.props.history.push("mailto:caleworkman@gmail.com")}
+            />
+            <Button
+              content="See My Work"
+              onClick={() => this.props.history.push("/portfolio")}
+            />
           </div>
 
         </div>
@@ -50,4 +59,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default withRouter(Home);

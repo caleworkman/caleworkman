@@ -27,6 +27,7 @@
   fill: white;
   height: 28px;
   width: 28px;
+  margin-bottom: -6px; /* Get SVG to line up with PNG's */
 }
 
 .footer__modal-container {
