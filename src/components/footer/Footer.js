@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import Modal from "../../components/modal/Modal.js";
 import {Link} from "react-router-dom"
 import {isMobile} from "react-device-detect";
-import "./Footer.css";
+
+import { copyText } from "../Utilities.js";
 
 import {ReactComponent as EmailIcon} from "../../assets/email.svg";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
+
+import "./Footer.css";
+
 
 class Footer extends Component {
   constructor(props) {
@@ -20,25 +24,13 @@ class Footer extends Component {
     this.toggleModal = this.toggleModal.bind(this);
   }
 
-  componentDidMount() {
-    document.addEventListener("copy", e => {
-      e.clipboardData.setData("text/plain", "caleworkman@gmail.com");
-      e.preventDefault();
-    });
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener("copy", function(e){});
-  }
-
   handleClickEmail() {
     // On mobile, open mail app. On desktop, copy to clipbard.
     if (isMobile) {
       console.log("mobile");
       // TODO: open mail app
     } else {
-      // copy to clipboard
-      document.execCommand("copy");
+      copyText("caleworkman@gmail.com");
       this.toggleModal();
     }
   }
@@ -77,10 +69,8 @@ class Footer extends Component {
         </div>
         {this.state.showModal
           ? <Modal onClick={this.toggleModal}>
-              <div className="footer__modal-container">
-                <div className="footer__modal-content">
-                  Email copied successfully.
-                </div>
+              <div className="footer__modal">
+                Email copied successfully.
               </div>
             </Modal>
           : null

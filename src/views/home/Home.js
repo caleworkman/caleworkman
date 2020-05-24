@@ -3,6 +3,9 @@ import Layout from "../layout/Layout.js";
 import Bubble from "../../components/bubble/Bubble.js";
 import Button from "../../components/button/Button.js";
 
+import { copyText } from "../../components/Utilities.js";
+
+
 import { withRouter } from "react-router";
 
 import "./Home.css";
