@@ -39,7 +39,7 @@ class Nav extends Component {
         : "nav__option";
 
       return (
-        <div className={className} id={to} key={to} onClick={this.navigate}>
+        <div className={className} id={to} key={nav} onClick={this.navigate}>
           <div className="nav__icon">
             {icon}
           </div>
