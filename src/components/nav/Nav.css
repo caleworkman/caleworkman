@@ -25,8 +25,21 @@
 
 
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)  {
+
+  .nav {
+    grid-auto-flow: column;
+  }
+
+  .nav__option:hover {
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+    fill: var(--turquoise);
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 992px)  {
 
   .nav {
     grid-auto-flow: column;

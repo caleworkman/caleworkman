@@ -9,6 +9,7 @@
   flex-direction: column;
   flex: 1;
   justify-content: center;
+  max-width: var(--maxwidth);
 }
 
 .layout__menu-icon {
@@ -43,14 +44,8 @@
   width: 100vw;
 }
 
-
-/* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
-
-  .layout__wrapper {
-    max-width: var(--maxwidth);
-  }
 
   .layout__header {
     padding-left: 3rem;
