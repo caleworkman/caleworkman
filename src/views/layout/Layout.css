@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
+.layout__menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .layout__header {
   align-items: center;
   color: var(--verdigris);
@@ -37,6 +42,7 @@
   max-width: var(--maxwidth);
   width: 100vw;
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
