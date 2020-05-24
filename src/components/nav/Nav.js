@@ -16,11 +16,11 @@ class Nav extends Component {
     this.navigate = this.navigate.bind(this);
 
     this.navs = {
-      'home': <HomeIcon />,
-      'about': <AccountIcon />,
-      'education': <SchoolIcon />,
-      'portfolio': <DevicesIcon />,
-      'resume': <DescriptionIcon />
+      'home': { icon: <HomeIcon />, to: "/" },
+      'about': { icon: <AccountIcon />, to: "/about" },
+      'education': { icon: <SchoolIcon />, to: "/education" },
+      'portfolio': { icon: <DevicesIcon />, to: "/portfolio" },
+      'resume': { icon: <DescriptionIcon />, to: "/resume" }
     };
   }
 
@@ -29,16 +29,17 @@ class Nav extends Component {
   }
 
   render() {
-    const location = this.props.location.pathname.replace("/","") || "home";
+    const location = this.props.location.pathname;
 
     const navs = Object.keys(this.navs).map(nav => {
-      const icon = this.navs[nav];
-      const className = (location === nav)
+      const icon = this.navs[nav].icon;
+      const to = this.navs[nav].to;
+      const className = (location === to)
         ? "nav__option nav__option--selected"
         : "nav__option";
 
       return (
-        <div className={className} id={nav} key={nav} onClick={this.navigate}>
+        <div className={className} id={to} key={nav} onClick={this.navigate}>
           <div className="nav__icon">
             {icon}
           </div>
