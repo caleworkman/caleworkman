@@ -15,7 +15,7 @@ class Nav extends Component {
     this.navigate = this.navigate.bind(this);
 
     this.navs = {
-      'home': <AccountIcon />,
+      'home': null,
       'about': <AccountIcon />,
       'education': <SchoolIcon />,
       'portfolio': <DevicesIcon />,

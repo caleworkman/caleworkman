@@ -34,9 +34,8 @@ class Home extends Component {
               Cale Workman.
             </h1>
             <p className="home__about">
-              I'm a software engineer with 5+ years
-              experience developing hardware testing solutions and data analysis
-              tools.
+              I'm a software engineer with 5+ years experience developing
+              hardware testing solutions and data analysis tools.
             </p>
 
             <div className="home__skills">
