@@ -53,8 +53,7 @@ class Resume extends Component {
           <a href="./Workman_Resume.pdf" target="_blank">
             <Document
               file={this.pdfFile}
-              onLoadSuccess={this.onDocumentLoadSuccess}
-              renderMode="svg">
+              onLoadSuccess={this.onDocumentLoadSuccess}>
               <Page
                 pageNumber={this.state.pageNumber}
                 renderAnnotationLayer={false}
