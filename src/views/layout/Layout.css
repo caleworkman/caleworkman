@@ -1,7 +1,7 @@
 .layout {
   display: flex;
   justify-content: space-around;
-  height: 100%;
+  min-height: 100%;
 }
 
 .layout__wrapper {
