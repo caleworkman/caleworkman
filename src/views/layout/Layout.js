@@ -31,7 +31,7 @@ class Layout extends Component {
               pageWrapId="page-wrap"
               outerContainerId="outer-container"
               customBurgerIcon={<MenuIcon className="layout__menu-icon"/>}
-              width="50%">
+              width="200px">
               <Nav />
             </Menu>
           : null
