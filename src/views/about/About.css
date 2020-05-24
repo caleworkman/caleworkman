@@ -7,3 +7,18 @@
 .about p {
   padding: 1rem;
 }
+
+.about hr {
+  width: 75%;
+}
+
+.about__title {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__subtitle {
+  text-align: center;
+  padding-top: 1rem;
+}
