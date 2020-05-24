@@ -10,9 +10,13 @@ class Demo extends Component {
       <Link to={"//" + this.props.url} target="_blank" className="demo__link">
         <div className="demo">
           <div className="demo__grid">
-            <div className="demo__icon">
-              <img src={this.props.imageUrl} alt={""} />
-            </div>
+            {this.props.imageUrl
+              ? <div className="demo__icon">
+                  <img src={this.props.imageUrl} alt={""} />
+                </div>
+              : null
+            }
+
             <h1 className="demo__title">
               {this.props.name}
             </h1>

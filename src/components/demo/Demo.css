@@ -19,7 +19,7 @@
   flex: 1;
   align-items: center;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 48px 1fr auto;
   grid-template-columns: 50px 1fr;
   grid-gap: 1rem;
   padding: 1rem;
