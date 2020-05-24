@@ -55,8 +55,7 @@
     "imageUrl": "https://gamepedia.cursecdn.com/wowpedia/9/97/Charactercreate-class_demonhunter.png",
     "url": "www.github.com/caleworkman/RaidBingo",
     "technologies": [
-      "Lua",
-      "JSON"
+      "Lua"
     ],
     "wip": false
   },
@@ -67,8 +66,8 @@
     "url": "www.caleworkman.com",
     "technologies": [
       "ReactJS",
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3",
       "JavaScript",
       "RESTful",
       "AWS",

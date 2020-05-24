@@ -4,6 +4,7 @@ import Nav from "../../components/nav/Nav.js";
 
 import { push as Menu } from "react-burger-menu";
 import { isMobileOnly } from 'react-device-detect';
+import { withRouter } from "react-router";
 
 import {ReactComponent as MenuIcon} from "../../assets/menu.svg";
 
@@ -38,7 +39,11 @@ class Layout extends Component {
         <div className="layout__wrapper" id="page-wrap">
 
           <header className="layout__header">
-            <div className="layout__logo">Cale</div>
+            <div
+            className="layout__logo"
+            onClick={() => this.props.history.push("/")}>
+              Cale
+            </div>
             {!isMobileOnly
               ? <Nav />
               : <div style={{visibility: "hidden", height: "24px"}} />
@@ -59,4 +64,4 @@ class Layout extends Component {
   }
 }
 
-export default Layout;
+export default withRouter(Layout);

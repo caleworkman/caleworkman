@@ -57,8 +57,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: var(--gunmetal);
-  color: var(--silversand);
+	background: rgb(11,12,16);
+	background: linear-gradient(90deg, rgba(11,12,16,1) 0%, rgba(31,40,51,1) 35%, rgba(11,12,16,1) 100%);
+	color: var(--silversand);
 	fill: var(--silversand);
   height: 100vh;
   font-family: "Montserrat";

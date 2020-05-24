@@ -9,7 +9,6 @@
   flex-direction: column;
   flex: 1;
   justify-content: center;
-  max-width: var(--maxwidth);
 }
 
 .layout__header {
@@ -22,6 +21,7 @@
 }
 
 .layout__logo {
+  cursor: pointer;
   font-family: "Caveat"; /* TODO: Maybe another font */
   font-size: 1.5rem;
 }
@@ -34,7 +34,6 @@
 
 .layout__footer {
   align-self: center;
-  max-width: var(--maxwidth);
   width: 100vw;
 }
 
@@ -42,11 +41,12 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
 
+  .layout__wrapper {
+    max-width: var(--maxwidth);
+  }
+
   .layout__header {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-  .layout__body {
-    max-width: var(--maxwidth);
   }
 }

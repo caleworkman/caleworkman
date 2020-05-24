@@ -13,12 +13,12 @@ class Demo extends Component {
             <div className="demo__icon">
               <img src={this.props.imageUrl} alt={""} />
             </div>
-            <h2 className="demo__title">
+            <h1 className="demo__title">
               {this.props.name}
-            </h2>
-            <div className="demo__description">
+            </h1>
+            <p className="demo__description">
               {this.props.description}
-            </div>
+            </p>
 
             <div className="demo__tech">
               {this.props.technologies.map(tech => {

@@ -4,13 +4,15 @@
 
 .demo {
   flex: 1;
-  border: solid 2px var(--navyblue);
+  border: solid 2px var(--silversand);
+  border-radius: 5px;
+  color: var(--silversand);
   position: relative;
 }
 
 .demo:hover {
-  background-color: var(--navyblue);
-  border-color: var(--rustyred);
+  background-color: var(--gunmetal);
+  border-color: var(--white);
 }
 
 .demo__grid {
@@ -24,8 +26,6 @@
 }
 
 .demo__icon {
-  grid-row: 1 / span 2;
-  grid-column: 1 / 1;
   justify-self: center;
   width: 48px;
   height: 48px;
@@ -44,6 +44,7 @@
 }
 
 .demo__description {
+  grid-column: 1 / span 2;
   text-align: justify;
 }
 
