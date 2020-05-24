@@ -29,11 +29,3 @@
   width: 28px;
   margin-bottom: -6px; /* Get SVG to line up with PNG's */
 }
-
-.footer__modal {
-  background: var(--verdigris);
-  border-radius: 1rem;
-  color: white;
-  cursor: pointer;
-  padding: 1rem;
-}

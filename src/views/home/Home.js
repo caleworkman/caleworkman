@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import Layout from "../layout/Layout.js";
 import Bubble from "../../components/bubble/Bubble.js";
 import Button from "../../components/button/Button.js";
+import Contact from "../../components/contact/Contact.js";
 
-import { copyText } from "../../components/Utilities.js";
+import { copyText } from "../../Utilities.js";
 
 
 import { withRouter } from "react-router";
@@ -45,10 +46,12 @@ class Home extends Component {
 
 
           <div className="home__buttons">
-            <Button
-              content="Contact Me"
-              onClick={() => this.props.history.push("mailto:caleworkman@gmail.com")}
-            />
+            <Contact>
+              <Button
+                content="Contact Me"
+                onClick={() => this.props.history.push("mailto:caleworkman@gmail.com")}
+              />
+            </Contact>
             <Button
               content="See My Work"
               onClick={() => this.props.history.push("/portfolio")}
