@@ -13,3 +13,7 @@
 .button--primary {
   background-color: var(--verdigris);
 }
+
+.button:hover {
+  background-color: var(--verdigris);
+}
