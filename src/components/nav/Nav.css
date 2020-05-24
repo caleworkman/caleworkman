@@ -1,4 +1,5 @@
 .nav {
+  color: var(--verdigris);
   display: grid;
   grid-gap: 1rem;
   text-transform: uppercase;
@@ -12,12 +13,13 @@
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: auto auto;
+  font-weight: bold;
 }
 
 .nav__option--selected {
-  border-color: white;
-  color: white;
-  fill: white;
+  border-color: var(--silversand);
+  color: var(--silversand);
+  fill: var(--silversand);
 }
 
 
@@ -31,15 +33,15 @@
   }
 
   .nav__option:hover {
-    border-color: var(--rustyred);
-    color: var(--rustyred);
-    fill: var(--rustyred);
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+    fill: var(--turquoise);
   }
 }
 
 /* Burger Menu */
 .bm-burger-button {
-  fill: var(--warmyellow);
+  fill: var(--verdigris);
   position: absolute;
   top: 1rem;
   right: 1rem;

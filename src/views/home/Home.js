@@ -26,11 +26,11 @@ class Home extends Component {
             <h1 className="home__name">
               <b>Cale Workman.</b>
             </h1>
-            <h2 className="home__about">
-              I'm a software engineer based in Columbia, SC with 5+ years
+            <p className="home__about">
+              I'm a software engineer with 5+ years
               experience developing hardware testing solutions and data analysis
               tools.
-            </h2>
+            </p>
 
             <div className="home__skills">
               {skillBubbles}
@@ -39,8 +39,8 @@ class Home extends Component {
 
 
           <div className="home__buttons">
-            <Button content="Contact Me" />
-            <Button content="My Work" />
+            <Button content="Contact Me"  />
+            <Button content="See My Work" />
           </div>
 
         </div>

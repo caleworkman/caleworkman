@@ -1,13 +1,13 @@
 .degree {
-  border: solid 2px var(--navyblue);
+  border: solid 2px var(--richblack);
   cursor: pointer;
   padding: 1rem;
   position: relative;
 }
 
 .degree:hover {
-  background-color: var(--navyblue);
-  border-color: var(--rustyred);
+  background-color: var(--verdigris);
+  border-color: var(--turquoise);
 }
 
 .degree__grid {

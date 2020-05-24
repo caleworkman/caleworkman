@@ -13,6 +13,8 @@
 
 .layout__header {
   align-items: center;
+  color: var(--verdigris);
+  fill: var(--verdigris);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
