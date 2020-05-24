@@ -1,9 +1,4 @@
 :root {
-  --navyblue: #18121e;
-  --gunmetal: #233237;
-  --rustyred: #984843;
-  --warmyellow: #eac67a;
-
   --richblack: #0b0c10;
   --gunmetal: #1f2833;
   --silversand: #c5c6c7;
@@ -11,7 +6,7 @@
   --verdigris: #45a29e;
 
 
-  --maxwidth: 1100px;
+  --maxwidth: 1200px;
 }
 
 .app {

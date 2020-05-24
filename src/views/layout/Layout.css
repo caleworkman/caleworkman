@@ -9,6 +9,7 @@
   flex-direction: column;
   flex: 1;
   justify-content: center;
+  max-width: var(--maxwidth);
 }
 
 .layout__header {
@@ -21,7 +22,8 @@
 }
 
 .layout__logo {
-  font-style: italic; /* TODO: make this look better */
+  font-family: "Caveat"; /* TODO: Maybe another font */
+  font-size: 1.5rem;
 }
 
 .layout__body {

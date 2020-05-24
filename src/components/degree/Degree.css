@@ -1,13 +1,14 @@
 .degree {
-  border: solid 2px var(--richblack);
+  border: solid 2px var(--silversand);
+  border-radius: 5px;
   cursor: pointer;
-  padding: 1rem;
+  padding: 1.5rem;
   position: relative;
 }
 
 .degree:hover {
   background-color: var(--verdigris);
-  border-color: var(--turquoise);
+  border-color: white;
 }
 
 .degree__grid {
@@ -36,10 +37,10 @@
 
 .degree__more {
   grid-column: 1 / span 2;
-  color: white;
+  color: var(--silversand);
   display: grid;
   grid-gap: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .degree__more-title {
