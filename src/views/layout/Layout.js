@@ -30,7 +30,7 @@ class Layout extends Component {
               isOpen={this.state.isMenuOpen}
               pageWrapId="page-wrap"
               outerContainerId="outer-container"
-              customBurgerIcon={<MenuIcon />}
+              customBurgerIcon={<MenuIcon className="layout__menu-icon"/>}
               width="50%">
               <Nav />
             </Menu>

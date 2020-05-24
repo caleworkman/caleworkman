@@ -5,10 +5,13 @@
   --turquoise: #5ce5da;
   --verdigris: #45a29e;
 
-
   --maxwidth: 1200px;
 }
 
+#root {
+  height: 100%;
+}
+
 .app {
-  height: 100vh;
+  height: 100%;
 }
