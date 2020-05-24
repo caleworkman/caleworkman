@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Layout from "../layout/Layout.js";
 import { Document, Page, pdfjs } from "react-pdf";
-import { isMobileOnly } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 import { Redirect } from "react-router";
 
 import "./Resume.css";
@@ -14,8 +14,31 @@ class Resume extends Component {
     this.state = {
       numPages: null,
       pageNumber: 1,
+      width: null
     }
+
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+
     this.pdfFile = "./Workman_Resume.pdf";
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateWindowDimensions);
+    this.updateWindowDimensions();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    if (isMobile) {
+      this.setState({
+        width: window.innerWidth - 32  // 1rem (16px) on each side
+      });
+    } else {
+      this.setState({width: null})
+    }
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -24,27 +47,22 @@ class Resume extends Component {
 
   render() {
 
-    if (isMobileOnly) {
-      console.log("redirect");
-      return (
-        <Redirect to="./Workman_Resume.pdf" />
-      );
-    }
-
     return (
       <Layout>
-        <div className="resume">
+        <div className="resume" ref={this.resumeRef}>
           <a href="./Workman_Resume.pdf" target="_blank">
             <Document
               file={this.pdfFile}
-              onLoadSuccess={this.onDocumentLoadSuccess}>
+              onLoadSuccess={this.onDocumentLoadSuccess}
+              renderMode="svg">
               <Page
                 pageNumber={this.state.pageNumber}
                 renderAnnotationLayer={false}
                 renderTextLayer={false}
+                width={isMobile ? this.state.width : null}
               />
             </Document>
-            <div className="resume__info">
+            <div className="resume__download">
               Download
             </div>
           </a>
