@@ -5,7 +5,7 @@ import "./Modal.css";
 
 const modalRoot = document.getElementById('modal-root');
 
-class Modal extends React.Component {
+class Modal extends Component {
   constructor(props) {
     super(props);
     // Create a div that we'll render the modal into. Because each
