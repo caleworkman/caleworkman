@@ -26,6 +26,10 @@
   padding: 1rem;
 }
 
+.layout__nav {
+  display: none;
+}
+
 .layout__logo {
   cursor: pointer;
   font-family: "Caveat"; /* TODO: Maybe another font */
@@ -33,23 +37,50 @@
 }
 
 .layout__body {
-  align-self: center;
   flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  width: 100vw;
 }
 
 .layout__footer {
   align-self: center;
-  max-width: var(--maxwidth);
-  width: 100vw;
+  box-sizing: border-box; /* padding included */
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Large devices (tablets) */
+@media only screen and (min-width: 768px) {
+
+  .layout__nav {
+    display: inline-block;
+  }
+
+  .layout__body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
 
   .layout__header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .layout__nav {
+    display: inline-block;
+  }
+
+  .layout__body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .layout__footer {
     padding-left: 3rem;
     padding-right: 3rem;
   }

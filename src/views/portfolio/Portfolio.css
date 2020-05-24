@@ -3,7 +3,6 @@
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   grid-gap: 1rem;
-  max-width: var(--maxwidth);
   padding: 1rem;
 }
 

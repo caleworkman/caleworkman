@@ -22,9 +22,11 @@ class Layout extends Component {
 
   render() {
 
+    const notWideEnoughForHorizontalMenu = window.innerWidth < 768;
+
     return (
       <div className="layout" id="outer-container">
-        {isMobileOnly
+        {isMobileOnly && notWideEnoughForHorizontalMenu
           ? <Menu
               right
               isOpen={this.state.isMenuOpen}
@@ -44,10 +46,9 @@ class Layout extends Component {
             onClick={() => this.props.history.push("/")}>
               Cale
             </div>
-            {!isMobileOnly
-              ? <Nav />
-              : <div style={{visibility: "hidden", height: "24px"}} />
-              }
+            <div className="layout__nav">
+              <Nav />
+            </div>
           </header>
 
           <div className="layout__body">
