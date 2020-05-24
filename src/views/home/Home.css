@@ -39,3 +39,14 @@
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 1rem;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+
+  .home__skills {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+  }
+
+}
