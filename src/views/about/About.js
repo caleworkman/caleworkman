@@ -9,18 +9,16 @@ class About extends Component {
         <div className="about">
           <h2 className="about__title">Current</h2>
           <p>
-            I am currently an <b>R&D Engineer</b>with Samtec based in Columbia, SC.
+            I am currently an <b>R&D Engineer</b> with Samtec based in Columbia, SC.
             I write software using <b>Python 3</b> to interface with electrical test
             equipment and automate signal integrity design work. I do some
             connector design for Samtec's new ventures using Ansys EDT Suite.
           </p>
-          <hr />
           <p>
             I am simultaneously enrolled in a Computer Science Ph.D. program at the
             University of South Carolina. My interests are in machine learning
             and artificial intelligence.
           </p>
-          <hr />
           <p>
             In my spare time, I develop mobile and web applications. I have
             released <a href="https://www.barleyapp.co" target="_blank"><b>Barley</b></a>,
@@ -32,6 +30,8 @@ class About extends Component {
             from real-time stock option data.
           </p>
 
+          <hr className="about__large-break" />
+
           <h2 className="about__title">Past</h2>
           <h3 className="about__subtitle">2018</h3>
           <p>
@@ -40,8 +40,6 @@ class About extends Component {
             to feature development, I also handled Tier-3 customer support and
             was responsible for debugging complex customer forms and root-causing bugs.
           </p>
-
-          <hr />
 
           <h3 className="about__subtitle">2014 - 2018</h3>
           <p>

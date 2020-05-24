@@ -9,12 +9,13 @@
   padding: 1rem;
 }
 
-.about hr {
+.about__large-break {
   width: 75%;
 }
 
 .about__title {
   font-weight: bold;
+  padding-top: 1rem;
   text-align: center;
   text-transform: uppercase;
 }
