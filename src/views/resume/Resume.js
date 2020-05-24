@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Layout from "../layout/Layout.js";
 import { Document, Page, pdfjs } from "react-pdf";
 import { isMobile } from "react-device-detect";
-import { Redirect } from "react-router";
 
 import "./Resume.css";
 
