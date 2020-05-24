@@ -1,7 +1,7 @@
 {
   "Barley": {
     "name": "Barley",
-    "description": "An iOS mobile app for restaurant inventory management and liquor order submission. Orders are submitted through third-party email or fax API's. A python backend keeps each state-wide catalog up to date. Currently developing a PWA in React.",
+    "description": "An iOS mobile app for restaurant inventory management and liquor order submission. Orders are submitted through third-party email or fax API's. A python backend keeps each state-wide catalog up to date.",
     "imageUrl": "https://uploads-ssl.webflow.com/592d99c115e9c76ea2f8be58/592d9a5f2940516ee255130e_MainLogo_Launch.svg",
     "url": "www.barleyapp.co",
     "technologies": [
