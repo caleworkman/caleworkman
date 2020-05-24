@@ -10,15 +10,19 @@ class Demo extends Component {
       <Link to={"//" + this.props.url} target="_blank" className="demo__link">
         <div className="demo">
           <div className="demo__grid">
-            <div className="demo__icon">
-              <img src={this.props.imageUrl} alt={""} />
-            </div>
-            <h2 className="demo__title">
+            {this.props.imageUrl
+              ? <div className="demo__icon">
+                  <img src={this.props.imageUrl} alt={""} />
+                </div>
+              : null
+            }
+
+            <h1 className="demo__title">
               {this.props.name}
-            </h2>
-            <div className="demo__description">
+            </h1>
+            <p className="demo__description">
               {this.props.description}
-            </div>
+            </p>
 
             <div className="demo__tech">
               {this.props.technologies.map(tech => {

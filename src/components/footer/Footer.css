@@ -20,22 +20,12 @@
 }
 
 .footer__social-icon {
-  height: 32px;
+  height: 28px;
 }
 
 .footer__social-svg {
   fill: white;
-  height: 35px;
-  width: 35px;
-}
-
-.footer__modal-container {
-  background: var(--rustyred);
-  border-radius: 1rem;
-  color: white;
-  cursor: pointer;
-}
-
-.footer__modal-content {
-  padding: 1rem;
+  height: 28px;
+  width: 28px;
+  margin-bottom: -6px; /* Get SVG to line up with PNG's */
 }

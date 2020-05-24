@@ -1,15 +1,15 @@
 .home {
+  box-sizing: border-box; /* Include padding in height */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
+  padding: 1rem;
 }
 
-.home__content {
+.home__intro {
   display: grid;
   grid-gap: 1rem;
-  grid-auto-rows: auto;
-  padding: 1rem;
 }
 
 .home__hi {
@@ -17,9 +17,25 @@
 }
 
 .home__name {
-  font-size: 1.5rem;
+  color: var(--turquoise);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .home__about {
   font-size: 1rem;
+}
+
+.home__skills {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-auto-rows: 1fr;
+  padding: 1rem;
+}
+
+.home__buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem;
 }

@@ -1,9 +1,9 @@
 .nav {
+  color: var(--verdigris);
   display: grid;
+  fill: var(--verdigris);
   grid-gap: 1rem;
-  grid-template-rows: 1fr;
   text-transform: uppercase;
-  padding: 1rem;
 }
 
 .nav__option {
@@ -14,12 +14,13 @@
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: auto auto;
+  font-weight: bold;
 }
 
 .nav__option--selected {
-  border-color: white;
-  color: white;
-  fill: white;
+  border-color: var(--silversand);
+  color: var(--silversand);
+  fill: var(--silversand);
 }
 
 
@@ -28,18 +29,29 @@
 @media only screen and (min-width: 768px) {
 
   .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-transform: uppercase;
-    max-width: var(--maxwidth);
-    width: 100%;
-    padding: 0;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
   }
 
   .nav__option:hover {
-    border-color: var(--rustyred);
-    color: var(--rustyred);
-    fill: var(--rustyred);
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+    fill: var(--turquoise);
   }
+}
+
+/* Burger Menu */
+.bm-burger-button {
+  fill: var(--verdigris);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.bm-menu {
+  padding-top: 2rem;
+}
+
+.bm-item-list {
+  padding: 1rem;
 }

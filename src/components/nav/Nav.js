@@ -4,6 +4,7 @@ import { withRouter } from "react-router";
 import {ReactComponent as AccountIcon} from "../../assets/account-circle.svg";
 import {ReactComponent as DescriptionIcon} from "../../assets/description.svg";
 import {ReactComponent as DevicesIcon} from "../../assets/devices.svg";
+import {ReactComponent as HomeIcon} from "../../assets/home.svg";
 import {ReactComponent as SchoolIcon} from "../../assets/school.svg";
 
 import "./Nav.css";
@@ -12,15 +13,10 @@ class Nav extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      isMenuOpen: false
-    }
-
     this.navigate = this.navigate.bind(this);
-    this.toggleMenu = this.toggleMenu.bind(this);
 
     this.navs = {
-      'home': <AccountIcon />,
+      'home': <HomeIcon />,
       'about': <AccountIcon />,
       'education': <SchoolIcon />,
       'portfolio': <DevicesIcon />,
@@ -30,13 +26,6 @@ class Nav extends Component {
 
   navigate(event) {
     this.props.history.push(event.currentTarget.id);
-  }
-
-  toggleMenu(e) {
-    e.preventDefault();
-    this.setState(prevState => {
-      return { isMenuOpen: !prevState.isMenuOpen }
-    });
   }
 
   render() {

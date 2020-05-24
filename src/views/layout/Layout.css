@@ -1,10 +1,10 @@
 .layout {
   display: flex;
   justify-content: space-around;
-  height: 100%;
+  min-height: 100%;
 }
 
-.layout__content {
+.layout__wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -12,14 +12,24 @@
 }
 
 .layout__header {
-  border-bottom: solid 1px var(--navyblue);
+  align-items: center;
+  color: var(--verdigris);
+  fill: var(--verdigris);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.layout__logo {
+  cursor: pointer;
+  font-family: "Caveat"; /* TODO: Maybe another font */
+  font-size: 1.5rem;
 }
 
 .layout__body {
   align-self: center;
   flex: 1;
   overflow: auto;
-  width: 100vw;
 }
 
 .layout__footer {
@@ -32,19 +42,13 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
 
-  .layout__body {
+  .layout__wrapper {
     max-width: var(--maxwidth);
   }
-}
 
-/* Burger Menu */
-.bm-burger-button {
-  fill: var(--warmyellow);
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
+  .layout__header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 
-.bm-menu {
-  padding-top: 3rem;
 }
