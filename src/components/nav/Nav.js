@@ -4,6 +4,7 @@ import { withRouter } from "react-router";
 import {ReactComponent as AccountIcon} from "../../assets/account-circle.svg";
 import {ReactComponent as DescriptionIcon} from "../../assets/description.svg";
 import {ReactComponent as DevicesIcon} from "../../assets/devices.svg";
+import {ReactComponent as HomeIcon} from "../../assets/home.svg";
 import {ReactComponent as SchoolIcon} from "../../assets/school.svg";
 
 import "./Nav.css";
@@ -15,7 +16,7 @@ class Nav extends Component {
     this.navigate = this.navigate.bind(this);
 
     this.navs = {
-      'home': null,
+      'home': <HomeIcon />,
       'about': <AccountIcon />,
       'education': <SchoolIcon />,
       'portfolio': <DevicesIcon />,

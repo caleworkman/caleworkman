@@ -1,6 +1,7 @@
 .nav {
   color: var(--verdigris);
   display: grid;
+  fill: var(--verdigris);
   grid-gap: 1rem;
   text-transform: uppercase;
 }
