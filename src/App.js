@@ -52,6 +52,7 @@ class App extends Component {
           <Switch>
             {routeComponents}
           </Switch>
+          <Redirect to="/" />
         </BrowserRouter>
       </div>
     );
