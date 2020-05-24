@@ -10,12 +10,12 @@
 }
 
 .about__large-break {
+  margin-bottom: 1rem;
   width: 75%;
 }
 
 .about__title {
   font-weight: bold;
-  padding-top: 1rem;
   text-align: center;
   text-transform: uppercase;
 }
