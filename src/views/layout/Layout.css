@@ -35,7 +35,9 @@
 .layout__body {
   align-self: center;
   flex: 1;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
 }
 
 .layout__footer {
