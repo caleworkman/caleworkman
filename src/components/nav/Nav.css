@@ -23,6 +23,17 @@
   fill: var(--silversand);
 }
 
+.nav__option--animated {
+  transform: translateY(-50px);
+  animation: slide-in 1s forwards;
+  -webkit-animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+  0% {transform: translateY(-50px); }
+  100% {transform: translateY(0%); }
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px)  {

@@ -36,12 +36,17 @@ const routes = [
 ];
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.animateNav = true;
+  }
 
   render() {
     const routeComponents = routes.map(({path, component}, index) =>
       <Route
         exact path={path}
-        component={component}
+        render={() => React.createElement(component, {animateNav: this.animateNav})}
         key={index}
       />
     );

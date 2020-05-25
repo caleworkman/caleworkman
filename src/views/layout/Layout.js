@@ -19,6 +19,8 @@ class Layout extends Component {
       isMenuOpen: false,
     }
 
+    this.animateNav = true;
+
     this.resize = this.resize.bind(this);
   }
 
@@ -62,7 +64,7 @@ class Layout extends Component {
               Cale
             </div>
             <div className="layout__nav">
-              <Nav />
+              <Nav animate={this.props.animateNav} />
             </div>
           </header>
 

@@ -31,15 +31,23 @@ class Nav extends Component {
   render() {
     const location = this.props.location.pathname;
 
+    var animationDelay = 0;
     const navs = Object.keys(this.navs).map(nav => {
       const icon = this.navs[nav].icon;
       const to = this.navs[nav].to;
-      const className = (location === to)
+      var className = (location === to)
         ? "nav__option nav__option--selected"
         : "nav__option";
 
+      if (this.props.animate) {
+        className += " nav__option--animated";
+      }
+
+      animationDelay += 0.2;
+
       return (
-        <div className={className} id={to} key={nav} onClick={this.navigate}>
+        <div className={className} id={to} key={nav} onClick={this.navigate}
+          style={{animationDelay: animationDelay + "s"}}>
           <div className="nav__icon">
             {icon}
           </div>

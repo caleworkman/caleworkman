@@ -20,7 +20,7 @@ class Home extends Component {
     });
 
     return (
-      <Layout>
+      <Layout {...this.props}>
         <div className="home">
 
           <div className="home__intro">
