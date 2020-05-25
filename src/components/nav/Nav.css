@@ -59,6 +59,8 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
+  height: 24px; /* Explicitly set height and width */
+  width: 24px;  /* because Safari doesn't resize when screen shrinks */
 }
 
 .bm-menu {
