@@ -75,9 +75,11 @@
 }
 
 .bm-menu {
+  box-sizing: border-box;
   padding-top: 2rem;
 }
 
 .bm-item-list {
+  box-sizing: border-box;
   padding: 1rem;
 }
