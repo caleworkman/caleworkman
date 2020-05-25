@@ -16,17 +16,31 @@ class Layout extends Component {
     super(props);
 
     this.state = {
-      isMenuOpen: false
+      isMenuOpen: false,
     }
+
+    this.resize = this.resize.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.resize);
+  }
+
+  compnentWillUnmount() {
+    window.removeEventListener("resize", this.resize);
+  }
+
+  resize() {
+    this.setState({
+      canFitHorizontalMenu: window.innerWidth <= 768
+    });
   }
 
   render() {
 
-    const notWideEnoughForHorizontalMenu = window.innerWidth < 768;
-
     return (
       <div className="layout" id="outer-container">
-        {isMobileOnly && notWideEnoughForHorizontalMenu
+        {isMobileOnly && this.state.canFitHorizontalMenu
           ? <Menu
               right
               isOpen={this.state.isMenuOpen}
