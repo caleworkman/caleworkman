@@ -28,11 +28,11 @@
 }
 
 .degree__more {
-  grid-column: 1 / span 2;
   color: var(--silversand);
   display: grid;
   grid-gap: 0.5rem;
   font-size: 0.9rem;
+  padding-top: 1rem; /* This should match demo__grid grid-gap */
 }
 
 .degree__more-title {

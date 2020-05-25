@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {ToggleExpandIcon} from "../../components/expand/ToggleExpandIcon.js";
+import SmoothCollapse from "react-smooth-collapse";
 import "./Degree.css";
 
 class Degree extends Component {
@@ -20,39 +21,30 @@ class Degree extends Component {
 
   render() {
 
-    const courseComponents = (this.state.expanded
-      ? Object.keys(this.props.courses).map(key => {
-          const course = this.props.courses[key];
-          return (
-            <div className="degree__course" key={key}>
-              {key + (course.enrolled ? " (enrolled)" : "")}
-            </div>
-          )
-        })
-      : null
-    );
+    const courseComponents = Object.keys(this.props.courses).map(key => {
+      const course = this.props.courses[key];
+      return (
+        <div className="degree__course" key={key}>
+          {key + (course.enrolled ? " (enrolled)" : "")}
+        </div>
+      )
+    });
 
-    const teachingComponents = (this.state.expanded
-      ? this.props.teaching.map(taught => {
-          return (
-            <div className="degree__course" key={taught}>
-              {taught}
-            </div>
-          )
-      })
-      : null
-    );
+    const teachingComponents = this.props.teaching.map(taught => {
+      return (
+        <div className="degree__course" key={taught}>
+          {taught}
+        </div>
+      )
+    });
 
-    const honorsComponents = (this.state.expanded
-      ? this.props.honors.map(honor => {
-          return (
-            <div className="degree__course" key={honor}>
-              {honor}
-            </div>
-          )
-      })
-      : null
-    );
+    const honorsComponents = this.props.honors.map(honor => {
+      return (
+        <div className="degree__course" key={honor}>
+          {honor}
+        </div>
+      )
+    });
 
     return (
       <div className="degree" onClick={this.expand}>
@@ -66,44 +58,42 @@ class Degree extends Component {
           <div className="degree__university">
             {this.props.university}
           </div>
+        </div>
 
-          {(this.state.expanded && courseComponents.length > 0 )
-            ? <React.Fragment>
-                <div className="degree__more">
+        <div className="degree__expanded-section">
+          <SmoothCollapse expanded={this.state.expanded}>
+            {courseComponents.length > 0
+              ? <div className="degree__more">
                   <div className="degree__more-title">
                     Coursework
                   </div>
                   {courseComponents}
                 </div>
-              </React.Fragment>
-            : null
-          }
+              : null
+            }
 
-          {(this.state.expanded && teachingComponents.length > 0 )
-            ? <React.Fragment>
-                <div className="degree__more">
+            {teachingComponents.length > 0
+              ? <div className="degree__more">
                   <div className="degree__more-title">
                     Teaching
                   </div>
                   {teachingComponents}
                 </div>
-              </React.Fragment>
-            : null
-          }
+              : null
+            }
 
-          {(this.state.expanded && honorsComponents.length > 0 )
-            ? <React.Fragment>
-                <div className="degree__more">
+            {honorsComponents.length > 0
+              ? <div className="degree__more">
                   <div className="degree__more-title">
                     Honors
                   </div>
                   {honorsComponents}
                 </div>
-              </React.Fragment>
-            : null
-          }
-
+              : null
+            }
+          </SmoothCollapse>
         </div>
+
         <div className="degree__expand-icon">
           {ToggleExpandIcon({expanded: this.state.expanded})}
         </div>
