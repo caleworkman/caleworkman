@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Modal from "../../components/modal/Modal.js";
 import { copyText } from "../../Utilities.js";
-import {isMobile} from "react-device-detect";
+import { isMobile } from "react-device-detect";
 
 import "./Contact.css";
 
@@ -13,19 +13,16 @@ class Contact extends Component {
       showModal: false
     }
 
-    this.handleContact = this.handleContact.bind(this);
+    this.handleCopyText = this.handleCopyText.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
+
+    this.email = "caleworkman@gmail.com";
   }
 
-  handleContact() {
+  handleCopyText() {
     // On mobile, open mail app. On desktop, copy to clipbard.
-    if (isMobile) {
-      console.log("mobile");
-      // TODO: open mail app
-    } else {
-      copyText("caleworkman@gmail.com");
-      this.toggleModal();
-    }
+    copyText(this.email);
+    this.toggleModal();
   }
 
   toggleModal() {
@@ -35,24 +32,33 @@ class Contact extends Component {
   }
 
   render() {
-    return (
-      <React.Fragment>
-        {React.Children.map(this.props.children, child => {
-          return React.cloneElement(child, {
-            onClick: this.handleContact
-          });
-        })}
 
-        {this.state.showModal
-          ? <Modal onClick={this.toggleModal}>
-              <div className="contact__modal">
-                Email copied successfully.
-              </div>
-            </Modal>
-          : null
-        }
-      </React.Fragment>
-    );
+    if (isMobile) {
+      return (
+        <a href={"mailto:" + this.email} target="_blank" rel="noopener noreferrer">
+          {this.props.children}
+        </a>
+      )
+    } else {
+      return (
+        <React.Fragment>
+          {React.Children.map(this.props.children, child => {
+            return React.cloneElement(child, {
+              onClick: this.handleContact
+            });
+          })}
+
+          {this.state.showModal
+            ? <Modal onClick={this.toggleModal}>
+                <div className="contact__modal">
+                  Email copied successfully.
+                </div>
+              </Modal>
+            : null
+          }
+        </React.Fragment>
+      );
+    }
   }
 }
 
