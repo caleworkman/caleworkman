@@ -16,7 +16,7 @@ class Contact extends Component {
     this.handleCopyText = this.handleCopyText.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
 
-    this.email = "caleworkman@gmail.com";
+    this.email = "caleworkman@gmail.com&subject=Contact%20from%20caleworkman.com";
   }
 
   handleCopyText() {
