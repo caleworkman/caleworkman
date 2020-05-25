@@ -61,7 +61,7 @@
   },
   "This Page": {
     "name": "CaleWorkman.com",
-    "description": "Personal website. A responsive single-page app built in React using React-Router. You're looking at it.",
+    "description": "Personal website. A responsive single-page app built in React using React-Router hosted on AWS.",
     "imageUrl": "",
     "url": "www.caleworkman.com",
     "technologies": [
