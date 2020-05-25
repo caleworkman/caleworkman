@@ -5,6 +5,7 @@
   height: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+  overflow: hidden;
 }
 
 .home__intro {
@@ -15,16 +16,19 @@
 
 .home__hi {
   font-size: 0.8rem;
+  animation-delay: 0.2s;
 }
 
 .home__name {
   color: var(--turquoise);
   font-size: 2rem;
   font-weight: bold;
+  animation-delay: 0.4s;
 }
 
 .home__about {
   font-size: 1rem;
+  animation-delay: 0.6s;
 }
 
 .home__skills {
@@ -38,6 +42,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   grid-gap: 1rem;
+}
+
+.home__animate {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+@keyframes slide-up {
+  0% {transform: translateY(100px); opacity: 0}
+  100% {transform: translateY(0%); opacity: 1}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

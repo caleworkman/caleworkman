@@ -15,8 +15,14 @@ class Home extends Component {
       "Python3", "ReactJS", "Swift", "HTML5", "CSS3"
     ];
 
+    var animationDelay = 3 * 0.2; // "3" because of hi, name, about
     const skillBubbles = skills.map(skill => {
-      return <Bubble content={skill} key={skill} />
+      animationDelay += 0.1;
+      return (
+        <div className="home__animate" style={{animationDelay: animationDelay + "s"}}>
+          <Bubble content={skill} key={skill} />
+        </div>
+      );
     });
 
     return (
@@ -24,13 +30,13 @@ class Home extends Component {
         <div className="home">
 
           <div className="home__intro">
-            <h2 className="home__hi">
+            <h2 className="home__hi home__animate">
               Hi, my name is
             </h2>
-            <h1 className="home__name">
+            <h1 className="home__name home__animate">
               Cale Workman.
             </h1>
-            <p className="home__about">
+            <p className="home__about home__animate">
               I'm a software engineer with 5+ years experience developing
               hardware testing solutions and data analysis tools.
             </p>
@@ -43,15 +49,19 @@ class Home extends Component {
 
           <div className="home__buttons">
             <Contact>
-              <Button
-                content="Contact Me"
-                onClick={() => this.props.history.push("mailto:caleworkman@gmail.com")}
-              />
+              <div className="home__animate" style={{animationDelay: animationDelay+"s"}}>
+                <Button
+                  content="Contact Me"
+                  onClick={() => this.props.history.push("mailto:caleworkman@gmail.com")}
+                />
+              </div>
             </Contact>
-            <Button
-              content="See My Work"
-              onClick={() => this.props.history.push("/portfolio")}
-            />
+              <div className="home__animate" style={{animationDelay: animationDelay+0.1+"s"}}>
+                <Button
+                  content="See My Work"
+                  onClick={() => this.props.history.push("/portfolio")}
+                />
+            </div>
           </div>
 
         </div>
