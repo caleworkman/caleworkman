@@ -6,15 +6,10 @@
   position: relative;
 }
 
-.degree:hover {
-  background-color: var(--gunmetal);
-  border-color: white;
-}
-
 .degree__grid {
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   grid-gap: 1rem;
 }
 
@@ -30,9 +25,6 @@
 
 .degree__university {
   grid-column: 1 / span 2;
-}
-
-.degree__gpa {
 }
 
 .degree__more {
@@ -56,4 +48,18 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+
+  .degree:hover {
+    background-color: var(--gunmetal);
+    border-color: white;
+  }
+
+  .degree__grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
