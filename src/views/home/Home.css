@@ -62,6 +62,10 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
 
+  .home__hi {
+    font-size: 1rem;
+  }
+
   .home__name {
     font-size: 4rem;
   }
@@ -77,11 +81,20 @@
 }
 
 @media only screen and (min-width: 768px) and (max-height: 400px) {
+
   .home__intro {
     grid-gap: 0.8rem;
   }
 
+  .home__hi {
+    font-size: 0.8rem;
+  }
+
   .home__name {
     font-size: 2rem;
+  }
+
+  .home__about {
+    font-size: 1rem;
   }
 }
