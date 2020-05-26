@@ -33,6 +33,9 @@ const routes = [
     path: "/resume",
     component: Resume
   },
+  {
+    component: Home
+  }
 ];
 
 class App extends Component {
@@ -57,7 +60,6 @@ class App extends Component {
           <Switch>
             {routeComponents}
           </Switch>
-          <Redirect to="/" />
         </BrowserRouter>
       </div>
     );
