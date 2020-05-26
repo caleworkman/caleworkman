@@ -21,7 +21,7 @@ class Demo extends Component {
             : null
           }
 
-          <h1 className="demo__title">
+          <h1 className={"demo__title" + (!this.props.imageUrl ? " demo__title--span" : "")}>
             {this.props.name}
           </h1>
 

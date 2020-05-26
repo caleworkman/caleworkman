@@ -60,8 +60,8 @@
     ],
     "wip": false
   },
-  "This Page": {
-    "name": "CaleWorkman.com",
+  "This Site": {
+    "name": "This Site",
     "description": "Personal website. A responsive single-page app built in React using React-Router hosted on AWS.",
     "imageUrl": "",
     "gitUrl": "https://github.com/caleworkman/caleworkman",

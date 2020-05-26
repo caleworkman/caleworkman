@@ -3,6 +3,7 @@
   border-radius: 1rem;
   color: var(--silversand);
   position: relative;
+  overflow: hidden;
 }
 
 .demo__grid {
@@ -11,7 +12,8 @@
   display: grid;
   grid-template-rows: 48px 1fr auto;
   grid-template-columns: 50px 1fr auto;
-  grid-gap: 1rem;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 1rem;
   padding: 1rem;
 }
 
@@ -31,6 +33,10 @@
   font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.demo__title--span {
+  grid-column: 1 / span 2;
 }
 
 .demo__links {
@@ -70,23 +76,29 @@
   fill: var(--silversand);
   width: 32px;
   height: 32px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .demo__svg--apple {
   width: 120px; /* Apple icon is a rectangle */
 }
 
-/* .demo__svg--apple path {
-  fill: var(--gunmetal);
-} */
-
 .demo__svg:hover {
   fill: var(--turquoise);
   transform: scale(1.1);
 }
-/*
-.demo__svg--apple:hover  {
-  fill: var(--turquoise);
-} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+
+  .demo__grid {
+    grid-gap: 1rem;
+  }
+
+  .demo__svg {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
