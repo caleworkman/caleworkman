@@ -8,7 +8,6 @@ import github from "../../assets/github.png";
 
 import "./Footer.css";
 
-
 class Footer extends Component {
 
   render() {

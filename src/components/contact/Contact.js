@@ -44,7 +44,7 @@ class Contact extends Component {
         <React.Fragment>
           {React.Children.map(this.props.children, child => {
             return React.cloneElement(child, {
-              onClick: this.handleContact
+              onClick: this.handleCopyText
             });
           })}
 

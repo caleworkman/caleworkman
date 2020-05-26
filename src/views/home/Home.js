@@ -50,10 +50,7 @@ class Home extends Component {
           <div className="home__buttons">
             <Contact>
               <div className="home__animate" style={{animationDelay: animationDelay+"s"}}>
-                <Button
-                  content="Contact Me"
-                  onClick={() => this.props.history.push("mailto:caleworkman@gmail.com")}
-                />
+                <Button content="Contact Me" />
               </div>
             </Contact>
               <div className="home__animate" style={{animationDelay: animationDelay+0.1+"s"}}>
