@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Bubble from "../bubble/Bubble.js";
 import {Link} from "react-router-dom"
+import SmoothCollapse from "react-smooth-collapse";
+import {ToggleExpandIcon} from "../../components/expand/ToggleExpandIcon.js";
+
 
 import {ReactComponent as AppStoreIcon} from "../../assets/app-store.svg";
 import {ReactComponent as LaunchIcon} from "../../assets/launch.svg";
@@ -9,10 +12,29 @@ import {ReactComponent as GitHubIcon} from "../../assets/github.svg";
 import "./Demo.css";
 
 class Demo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      expanded: false
+    }
+
+    this.expand = this.expand.bind(this);
+  }
+
+  expand() {
+    this.setState(prevState => {
+      return {expanded: !prevState.expanded}
+    });
+  }
 
   render() {
+
+    const techComponents = this.props.technologies.map(tech => {
+      return <Bubble content={tech} key={tech}/>
+    });
+
     return (
-      <div className="demo">
+      <div className="demo" onClick={this.expand}>
         <div className="demo__grid">
           {this.props.imageUrl
             ? <div className="demo__icon">
@@ -48,19 +70,30 @@ class Demo extends Component {
 
           <p className="demo__description">
             {this.props.description}
+            {this.props.wip
+              ? <span className="demo__wip"> (In Development)</span>
+              : null
+            }
           </p>
 
-          <div className="demo__tech">
-            {this.props.technologies.map(tech => {
-              return <Bubble content={tech} key={tech}/>
-            })}
+          <div className="demo__collapsible">
+            <SmoothCollapse expanded={this.state.expanded}>
+              <div className="demo__tech">
+                {techComponents}
+              </div>
+            </SmoothCollapse>
+          </div>
+
+          <div className="demo__uncollapsible">
+            <div className="demo__tech">
+              {techComponents}
+            </div>
           </div>
         </div>
 
-        {this.props.wip
-          ? <div className="demo__wip">*Under Development</div>
-          : null
-        }
+        <div className="demo__expand-icon">
+          {ToggleExpandIcon({expanded: this.state.expanded})}
+        </div>
       </div>
     )
   }

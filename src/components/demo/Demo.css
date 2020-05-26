@@ -51,8 +51,15 @@
   text-align: justify;
 }
 
-.demo__tech {
+.demo__collapsible {
   grid-column: 1 / -1;
+}
+
+.demo__uncollapsible {
+  display: none;
+}
+
+.demo__tech {
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -62,15 +69,19 @@
 }
 
 .demo__wip {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
   color: white;
   font-size: 0.8rem;
+  font-style: italic;
+}
+
+.demo__expand-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0.5rem;
+  color: white;
 }
 
 /* SVG */
-
 .demo__svg {
   cursor: pointer;
   fill: var(--silversand);
@@ -100,5 +111,18 @@
   .demo__svg {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .demo__collapsible {
+    display: none;
+  }
+
+  .demo__uncollapsible {
+    display: inline-block;
+    grid-column: 1 / -1;
+  }
+
+  .demo__expand-icon {
+    display: none;
   }
 }
