@@ -81,7 +81,7 @@
 }
 
 .demo__svg--apple {
-  width: 120px; /* Apple icon is a rectangle */
+  width: 100px; /* Apple icon is a rectangle */
 }
 
 .demo__svg:hover {
