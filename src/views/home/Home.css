@@ -66,6 +66,10 @@
     font-size: 4rem;
   }
 
+  .home__about {
+    font-size: 1.2rem;
+  }
+
   .home__skills {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
