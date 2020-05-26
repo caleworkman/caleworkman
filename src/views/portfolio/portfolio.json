@@ -7,12 +7,12 @@
     "webUrl": "www.barleyapp.co",
     "technologies": [
       "Swift",
-      "CloudKit",
       "XCode",
+      "CloudKit",
       "Python",
+      "REST",
       "Phaxio",
       "Mailgun",
-      "RESTful",
       "Zeplin"
     ],
     "wip": false
@@ -24,12 +24,12 @@
     "webUrl": "www.inthemoney.app",
     "technologies": [
       "ReactJS",
-      "Jest",
       "HTML5",
       "CSS3",
+      "Jest",
       "JavaScript",
       "Express",
-      "RESTful",
+      "REST",
       "AWS"
     ],
     "wip": false
@@ -41,12 +41,12 @@
     "webUrl": "www.lifechart-dev.firebaseapp.com/",
     "technologies": [
       "ReactJS",
-      "Jest",
       "HTML5",
       "CSS3",
+      "Jest",
       "JavaScript",
       "Firestore",
-      "RESTful"
+      "REST"
     ],
     "wip": true
   },
