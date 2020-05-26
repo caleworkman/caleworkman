@@ -3,7 +3,8 @@
     "name": "Barley",
     "description": "An iOS mobile app for restaurant inventory management and liquor order submission. Orders are submitted through third-party email or fax API's. A python backend keeps each state-wide catalog up to date.",
     "imageUrl": "https://uploads-ssl.webflow.com/592d99c115e9c76ea2f8be58/592d9a5f2940516ee255130e_MainLogo_Launch.svg",
-    "url": "www.barleyapp.co",
+    "appUrl": "https://apps.apple.com/us/app/barley-the-liquor-order-app/id1227066379",
+    "webUrl": "www.barleyapp.co",
     "technologies": [
       "Swift",
       "CloudKit",
@@ -20,7 +21,7 @@
     "name": "In the Money",
     "description": "Plot stock option profit-loss diagrams using real-time finance data. Developed mobile-first with a responsive web UI and RESTful backend.",
     "imageUrl": "https://www.inthemoney.app/favicon.ico",
-    "url": "www.inthemoney.app",
+    "webUrl": "www.inthemoney.app",
     "technologies": [
       "ReactJS",
       "Jest",
@@ -37,7 +38,7 @@
     "name": "LifeChart",
     "description": "A tool to generate an aesthetic personal timeline. Written in React with Google Firestore backend.",
     "imageUrl": "",
-    "url": "www.lifechart-dev.firebaseapp.com/",
+    "webUrl": "www.lifechart-dev.firebaseapp.com/",
     "technologies": [
       "ReactJS",
       "Jest",
@@ -53,7 +54,7 @@
     "name": "Warcraft Bingo",
     "description": "A multiplayer bingo game to be played inside the retail version of World of Warcraft. Written in Lua using AceComm for player communication and up to date for retail version 8.3.",
     "imageUrl": "https://gamepedia.cursecdn.com/wowpedia/9/97/Charactercreate-class_demonhunter.png",
-    "url": "www.github.com/caleworkman/RaidBingo",
+    "gitUrl": "www.github.com/caleworkman/RaidBingo",
     "technologies": [
       "Lua"
     ],
@@ -63,7 +64,8 @@
     "name": "CaleWorkman.com",
     "description": "Personal website. A responsive single-page app built in React using React-Router hosted on AWS.",
     "imageUrl": "",
-    "url": "www.caleworkman.com",
+    "gitUrl": "https://github.com/caleworkman/caleworkman",
+    "webUrl": "www.caleworkman.com",
     "technologies": [
       "ReactJS",
       "HTML5",
