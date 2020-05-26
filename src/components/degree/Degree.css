@@ -47,7 +47,7 @@
   fill: white;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 0.5rem;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
