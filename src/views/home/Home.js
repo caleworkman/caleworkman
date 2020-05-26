@@ -38,9 +38,9 @@ class Home extends Component {
             </h1>
             <p className="home__about home__animate">
               I'm a software engineer with 5+ years experience developing
-              hardware testing solutions and data analysis tools.
+              hardware testing solutions, data analysis tools, and web
+              applications.
             </p>
-
             <div className="home__skills">
               {skillBubbles}
             </div>
