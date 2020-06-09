@@ -10,7 +10,9 @@ class Portfolio extends Component {
 
     const projectComponents = Object.keys(portfolio).map(key => {
       const project = portfolio[key];
-      return <Demo key={project.name} {...project} />
+      if (!project.wip) {
+        return <Demo key={project.name} {...project} />
+      }
     });
 
     return (
