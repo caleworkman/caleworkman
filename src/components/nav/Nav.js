@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { withRouter } from "react-router";
 
 import {ReactComponent as AccountIcon} from "../../assets/account-circle.svg";
@@ -9,7 +9,7 @@ import {ReactComponent as SchoolIcon} from "../../assets/school.svg";
 
 import "./Nav.css";
 
-class Nav extends Component {
+class Nav extends PureComponent {
   constructor(props) {
     super(props);
 

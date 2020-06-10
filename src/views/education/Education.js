@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import Layout from "../layout/Layout.js";
 import Degree from "../../components/degree/Degree.js";
 
@@ -6,7 +6,7 @@ import "./Education.css";
 
 const education = require("./education.json");
 
-class Education extends Component {
+class Education extends PureComponent {
 
   render() {
 

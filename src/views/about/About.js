@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import Layout from "../layout/Layout.js";
 import "./About.css";
 
-class About extends Component {
+class About extends PureComponent {
   render() {
     return (
       <Layout>

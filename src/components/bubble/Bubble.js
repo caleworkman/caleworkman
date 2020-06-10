@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import "./Bubble.css";
 
-class Bubble extends Component {
+class Bubble extends PureComponent {
   render() {
     return (
       <div className="bubble">

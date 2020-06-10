@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import Contact from "../../components/contact/Contact.js";
 import {Link} from "react-router-dom"
 
@@ -8,7 +8,7 @@ import github from "../../assets/github.png";
 
 import "./Footer.css";
 
-class Footer extends Component {
+class Footer extends PureComponent {
 
   render() {
     return (
