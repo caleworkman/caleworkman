@@ -50,6 +50,19 @@
     ],
     "wip": true
   },
+  "iFit Landing Page": {
+    "name": "iFit Landing Page",
+    "description": "A responsive mock landing page for iFit written in React based on a provided Sketch file.",
+    "imageUrl": "",
+    "gitUrl": "www.github.com/caleworkman/ifit-interview-challenge",
+    "webUrl": "caleworkman.github.io/ifit-interview-challenge",
+    "technologies": [
+      "ReactJS",
+      "HTML5",
+      "CSS3"
+    ],
+    "wip": false
+  },
   "Warcraft Bingo": {
     "name": "Warcraft Bingo",
     "description": "A multiplayer bingo game to be played inside the retail version of World of Warcraft. Written in Lua using AceComm for player communication and up to date for retail version 8.3.",
@@ -58,6 +71,19 @@
     "technologies": [
       "Lua"
     ],
+    "wip": false
+  },
+  "Pathfinding Visualizer": {
+    "name": "Pathfinding Visualizer",
+    "description": "A single-page React app using Bootstrap to demonstrate different pathfinding algorithms. It currently implements A*, Breadth-First, Depth-First, and Dijkstra's Search algorithms but I intend to add more functionality.",
+    "imageUrl": "",
+    "gitUrl": "github.com/caleworkman/pathfinding-visualizer",
+    "webUrl": "caleworkman.github.io/pathfinding-visualizer/",
+    "technologies": [
+      "ReactJS",
+      "HTML5",
+      "CSS3",
+      "Bootstrap"    ],
     "wip": false
   },
   "This Site": {
