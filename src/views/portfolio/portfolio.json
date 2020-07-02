@@ -75,7 +75,7 @@
   },
   "Pathfinding Visualizer": {
     "name": "Pathfinding Visualizer",
-    "description": "A single-page React app using Bootstrap to demonstrate different pathfinding algorithms. It currently implements A*, Breadth-First, Depth-First, and Dijkstra's Search algorithms but I intend to add more functionality.",
+    "description": "A single-page React app using Bootstrap to demonstrate different pathfinding algorithms. It currently implements A*, Breadth-First, Depth-First, and Dijkstra's Search algorithms but I intend to add more functionality. Does not work on mobile. ",
     "imageUrl": "",
     "gitUrl": "github.com/caleworkman/pathfinding-visualizer",
     "webUrl": "caleworkman.github.io/pathfinding-visualizer/",
@@ -83,7 +83,8 @@
       "ReactJS",
       "HTML5",
       "CSS3",
-      "Bootstrap"    ],
+      "Bootstrap"
+    ],
     "wip": false
   },
   "This Site": {
